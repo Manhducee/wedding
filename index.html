@@ -1,0 +1,686 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f8e7e5">
+  <title>Thành Trung & Nhật Trang — Wedding 2027</title>
+  <meta name="description" content="Thiệp cưới online — Thành Trung & Nhật Trang">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <section class="invitation-cover" id="invitationCover" aria-label="Mở thiệp cưới">
+    <div class="cover__background"></div>
+    <div class="cover__petals"></div>
+    <div class="cover__flowers cover__flowers--left"></div>
+    <div class="cover__flowers cover__flowers--right"></div>
+    <div class="cover__flowers cover__flowers--bottom-left"></div>
+    <div class="cover__flowers cover__flowers--bottom-right"></div>
+
+    <div class="cover__card" id="openInvitation" role="button" tabindex="0" aria-label="Nhấn để mở thiệp">
+      <div class="cover__shine" aria-hidden="true"></div>
+      <div class="cover__seal" aria-hidden="true">♡</div>
+      <div class="cover__arch"></div>
+      <div class="cover__ornament">❦</div>
+      <p class="cover__eyebrow">WEDDING INVITATION</p>
+      <p class="cover__small">TRÂN TRỌNG KÍNH MỜI</p>
+
+      <h1 class="cover__names">
+        <span class="cover__name cover__name--trung">THÀNH TRUNG</span>
+        <em class="cover__amp">&amp;</em>
+        <span class="cover__name cover__name--trang">NHẬT TRANG</span>
+      </h1>
+
+      <div class="cover__line"></div>
+      <p class="cover__year">2027</p>
+
+      <div class="cover__countdown" aria-label="Đếm ngược đến ngày cưới">
+        <strong id="coverCountdown">—</strong>
+        <span>DAYS TO GO</span>
+      </div>
+
+      <button class="cover__button" type="button" aria-label="Mở thiệp">
+        <span class="cover__button-label">MỞ THIỆP</span>
+        <span class="cover__button-spinner" aria-hidden="true"></span>
+        <span class="cover__button-heart" aria-hidden="true">♡</span>
+      </button>
+
+      <p class="cover__hint">CHẠM ĐỂ MỞ</p>
+    </div>
+  </section>
+
+  <div class="wedding-page" id="weddingPage" aria-hidden="true">
+  <div class="petals-fixed aria-hidden="true"></div>
+
+  <header class="hero" id="home">
+    <div class="hero__wash"></div>
+    <div class="hero__floral hero__floral--left"></div>
+    <div class="hero__floral hero__floral--right"></div>
+
+    <div class="hero__content">
+      <div class="hero__kicker">THE BEGINNING OF FOREVER</div>
+      <p class="eyebrow">OUR STORY</p>
+      <div class="mini-ornament">❦</div>
+
+      <h1>
+        <span>THÀNH TRUNG</span>
+        <em>&amp;</em>
+        <span>NHẬT TRANG</span>
+      </h1>
+
+      <p class="hero__subtitle">WE ARE GETTING MARRIED</p>
+      <div class="hero__year">2027</div>
+      <div class="hero__date-line">A NEW CHAPTER BEGINS</div>
+
+      <a href="#story" class="scroll-cue">
+        <span>SCROLL</span>
+        <b>↓</b>
+      </a>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="story story--memorybook section" id="story">
+      <div class="memorybook__bg" aria-hidden="true"></div>
+      <div class="memorybook__floral memorybook__floral--tl" aria-hidden="true"></div>
+      <div class="memorybook__floral memorybook__floral--br" aria-hidden="true"></div>
+      <div class="memorybook__petals" aria-hidden="true"></div>
+
+      <div class="memorybook">
+        <header class="memorybook__cover story-reveal">
+          <div class="memorybook__cover-copy">
+            <p class="memorybook__micro">THE BEGINNING<br>OF FOREVER</p>
+            <h2>OUR<br><span>STORY</span></h2>
+            <div class="memorybook__rule"></div>
+            <p class="memorybook__intro-script">It wasn't one grand moment.<br>It was a collection of little moments...</p>
+          </div>
+          <figure class="memorybook__hero-photo">
+            <img src="assets/images/story/01-our-story-hero.jpg" alt="Thành Trung và Nhật Trang" fetchpriority="high">
+          </figure>
+          <span class="memorybook__heart">♥</span>
+        </header>
+
+        <div class="memorybook__spread memorybook__spread--01 story-reveal">
+          <div class="memorybook__paper memorybook__paper--01">
+            <span class="memorybook__chapter">01</span>
+            <h3>THE LITTLE THINGS</h3>
+            <p>Những khoảnh khắc rất bình thường<br>nhưng luôn khiến chúng mình mỉm cười.</p>
+          </div>
+          <figure class="memory-photo memory-photo--polaroid memory-photo--02">
+            <img src="assets/images/story/02-little-moments.jpg" alt="Một khoảnh khắc vui của hai người" loading="lazy">
+            <figcaption>Silly moments<br>we keep forever</figcaption>
+          </figure>
+          <div class="memorybook__brush memorybook__brush--01" aria-hidden="true"></div>
+        </div>
+
+        <div class="memorybook__spread memorybook__spread--02 story-reveal">
+          <figure class="memory-photo memory-photo--landscape memory-photo--03">
+            <img src="assets/images/story/03-adventure-kayak.jpg" alt="Thành Trung và Nhật Trang trong chuyến đi" loading="lazy">
+          </figure>
+          <div class="memorybook__paper memorybook__paper--02">
+            <span class="memorybook__chapter">02</span>
+            <h3>THE PLACES<br>WE WENT</h3>
+            <p>Cùng nhau khám phá<br>những vùng đất mới,<br>những trải nghiệm mới<br>và thật nhiều kỷ niệm.</p>
+          </div>
+          <div class="memorybook__doodle memorybook__doodle--mountain">⌁⌁⌁</div>
+        </div>
+
+        <div class="memorybook__spread memorybook__spread--03 story-reveal">
+          <div class="memorybook__paper memorybook__paper--03">
+            <span class="memorybook__chapter">03</span>
+            <h3>THE YEARS<br>IN BETWEEN</h3>
+            <p>Thời gian trôi qua,<br>có những ngày vui,<br>những ngày mệt,<br>nhưng chúng mình vẫn luôn ở đây.</p>
+          </div>
+          <figure class="memory-photo memory-photo--culture memory-photo--04">
+            <img src="assets/images/story/04-adventure-culture.jpg" alt="Một chuyến khám phá của hai người" loading="lazy">
+          </figure>
+          <figure class="memory-photo memory-photo--small memory-photo--05">
+            <img src="assets/images/story/05-everyday-01.jpg" alt="Một kỷ niệm đời thường" loading="lazy">
+          </figure>
+        </div>
+
+        <div class="memorybook__spread memorybook__spread--04 story-reveal">
+          <figure class="memory-photo memory-photo--red memory-photo--09">
+            <img src="assets/images/story/09-together.jpg" alt="Thành Trung và Nhật Trang bên nhau" loading="lazy">
+          </figure>
+          <div class="memorybook__paper memorybook__paper--04">
+            <span class="memorybook__chapter">04</span>
+            <h3>SOMEWHERE<br>ALONG THE WAY</h3>
+            <p>Chúng mình nhận ra rằng<br>không chỉ đang tạo ra những kỷ niệm,<br>mà còn đang xây dựng một cuộc sống cùng nhau.</p>
+          </div>
+          <figure class="memory-photo memory-photo--warm memory-photo--10">
+            <img src="assets/images/story/10-together.jpg" alt="Một khoảnh khắc gần gũi của hai người" loading="lazy">
+          </figure>
+          <span class="memory-note memory-note--04">A little closer<br>than yesterday ♡</span>
+        </div>
+
+        <div class="memorybook__spread memorybook__spread--05 story-reveal">
+          <div class="memorybook__paper memorybook__paper--05">
+            <span class="memorybook__chapter">05</span>
+            <h3>AND NOW...</h3>
+            <p>Một chương mới sắp bắt đầu,<br>những ước mơ nhiều hơn,<br>nhiều kế hoạch hơn<br>và một hành trình thật dài phía trước.</p>
+          </div>
+          <figure class="memory-photo memory-photo--final memory-photo--11">
+            <img src="assets/images/story/11-next-chapter.jpg" alt="Thành Trung và Nhật Trang" loading="lazy">
+          </figure>
+          <span class="memory-note memory-note--05">Come with us<br>to the next chapter ♡</span>
+        </div>
+
+        <footer class="memorybook__ending story-reveal">
+          <div class="memorybook__ending-wash" aria-hidden="true"></div>
+          <div class="memorybook__ending-copy">
+            <span>OUR NEXT CHAPTER</span>
+            <p class="memorybook__ending-script">A new chapter begins ♡</p>
+          </div>
+        </footer>
+      </div>
+    </section>
+
+
+    <section class="letter section" id="letter">
+      <div class="letter__wash" aria-hidden="true"></div>
+      <div class="letter__floral letter__floral--left" aria-hidden="true"></div>
+      <div class="letter__floral letter__floral--right" aria-hidden="true"></div>
+
+      <div class="letter__paper">
+        <div class="letter__topline">
+          <span>A LETTER TO YOU</span>
+          <span>♡</span>
+        </div>
+
+        <div class="letter__heading">
+          <p class="eyebrow">WITH GRATITUDE</p>
+          <h2>Một lá thư</h2>
+          <div class="letter__script-title">gửi những người chúng mình yêu quý</div>
+        </div>
+
+        <div class="letter__rule" aria-hidden="true"></div>
+
+        <div class="letter__body">
+          <p>Gửi những người chúng mình yêu quý,</p>
+
+          <p>
+            Có lẽ một ngày đặc biệt không được tạo nên
+            chỉ bởi hai người đứng cạnh nhau.
+          </p>
+
+          <p>
+            Nó được tạo nên bởi tất cả những người
+            đã từng xuất hiện trong cuộc đời chúng mình.
+          </p>
+
+          <p>
+            Có người đã cùng chúng mình đi qua những năm tháng đầu tiên.
+            Có người đã ở bên trong những ngày vui,
+            cũng có người đã lặng lẽ bước qua những ngày khó khăn.
+          </p>
+
+          <p class="letter__emphasis">
+            Chúng mình biết ơn những người đã đến,
+            trân trọng những người còn ở lại,
+            và nhớ về những người đã từng là một phần
+            của hành trình này.
+          </p>
+
+          <p>
+            Nếu hôm nay chúng mình có thể đứng ở đây,
+            bắt đầu một chương mới,
+            thì trong câu chuyện ấy luôn có một phần của mọi người.
+          </p>
+
+          <p>
+            Vì vậy, thay vì chỉ nói rằng
+            “cảm ơn vì đã đến dự đám cưới”,
+            chúng mình muốn nói rằng:
+          </p>
+
+          <p class="letter__emphasis letter__emphasis--quote">
+            Cảm ơn vì đã từng ở trong câu chuyện của chúng mình.
+          </p>
+
+          <p>
+            Ngày 15 tháng 5 năm 2027,
+            chúng mình sẽ bước sang một chương mới.
+          </p>
+
+          <p>
+            Và thật đẹp khi trong khoảnh khắc ấy,
+            có những người chúng mình yêu quý cùng hiện diện.
+          </p>
+        </div>
+
+        <div class="letter__closing">
+          <p class="letter__closing-small">Cảm ơn bạn.</p>
+          <p class="letter__closing-script">Vì đã ở đây.</p>
+          <span class="letter__heart" aria-hidden="true">♡</span>
+          <p class="letter__signoff">With all our love,</p>
+          <p class="letter__signature">Thành Trung &amp; Nhật Trang</p>
+          <span class="letter__date">15 · 05 · 2027</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="save-date section" id="save-date">
+      <div class="section-bg"></div>
+      <div class="section-shade"></div>
+      <div class="save-date__petal save-date__petal--left" aria-hidden="true"></div>
+      <div class="save-date__petal save-date__petal--right" aria-hidden="true"></div>
+
+      <div class="save-date__inner">
+        <p class="eyebrow light">SAVE THE DATE</p>
+            <div class="save-date__date">
+          <span class="save-date__day">15</span>
+          <span class="save-date__slash">·</span>
+          <span class="save-date__month">05</span>
+          <span class="save-date__slash">·</span>
+          <span class="save-date__year">2027</span>
+        </div>
+        <p class="save-date__weekday">SATURDAY</p>
+        <img class="divider divider--light" src="assets/images/divider.png" alt="">
+        <p class="save-date__line">A new chapter begins ♡</p>
+
+        <div class="date-grid">
+          <article>
+            <span>01</span>
+            <strong>THỜI GIAN LỄ CƯỚI</strong>
+            <small>11:00 · 15.05.2027</small>
+          </article>
+          <article>
+            <span>02</span>
+            <strong>THỜI GIAN TIỆC CƯỚI</strong>
+            <small>18:00 · 15.05.2027</small>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="location section" id="location">
+      <div class="location__bg"></div>
+      <div class="location__veil"></div>
+      <div class="location__frame">
+        <div class="location__copy">
+          <p class="eyebrow">THE PLACE</p>
+
+          <figure class="location__illustration">
+            <img
+              src="assets/images/the-opera-illustration.png"
+              alt="Minh họa THE OPERA — Wedding & Convention Center"
+              loading="lazy"
+              decoding="async">
+          </figure>
+
+          <h2>Địa điểm</h2>
+          <div class="location__ornament">♡</div>
+          <p class="location__lead">Nơi chúng ta sẽ cùng nhau<br>viết tiếp một ngày thật đẹp.</p>
+          <div class="location__rule"></div>
+          <div class="location__venue">
+            <h3>THE OPERA</h3>
+            <p class="location__venue-sub">Wedding &amp; Convention Center</p>
+            <p class="location__address">Lô 18A Lê Hồng Phong<br>Kiều Sơn, Hải An, Hải Phòng</p>
+          </div>
+          <a class="soft-button location__map-button" href="https://maps.app.goo.gl/MX1ZEyhaJVYMQF8VA?g_st=ic" target="_blank" rel="noopener noreferrer">📍 MỞ BẢN ĐỒ <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="thankyou-video section" id="thankyou-video">
+      <div class="thankyou-video__paper"></div>
+      <div class="thankyou-video__content">
+        <p class="eyebrow">A LITTLE THANK YOU</p>
+        <h2>Một lời cảm ơn</h2>
+        <div class="script-title rose">từ chúng tôi</div>
+        <div class="small-ornament">♡</div>
+        <p class="thankyou-video__lead">
+          Cảm ơn bạn đã hiện diện trong câu chuyện của<br class="desktop-only">
+          Thành Trung &amp; Nhật Trang.
+        </p>
+
+        <div class="thankyou-video__frame thankyou-video__frame--youtube">
+          <iframe
+            class="thankyou-video__player thankyou-video__youtube"
+            src="https://www.youtube.com/embed/Y5VoCfbB6As?rel=0&playsinline=1"
+            title="Thành Trung & Nhật Trang — A Little Thank You"
+            loading="eager"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+          <div class="thankyou-video__caption">
+            <span>THANK YOU FOR BEING PART OF OUR STORY</span>
+            <a
+              href="https://www.youtube.com/watch?v=Y5VoCfbB6As"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Mở video A Little Thank You trên YouTube">
+              XEM TRÊN YOUTUBE ↗
+            </a>
+          </div>
+        </div>
+
+        <p class="thankyou-video__note">
+          Một đoạn phim nhỏ, dành riêng cho những người chúng tôi yêu quý.
+        </p>
+      </div>
+    </section>
+
+    <section class="rsvp section" id="rsvp">
+      <div class="rsvp__bg"></div>
+      <div class="rsvp__shade"></div>
+      <div class="rsvp-hearts" aria-hidden="true">
+        <span>♡</span><span>♡</span><span>♡</span><span>♡</span><span>♡</span><span>♡</span>
+        <span>♡</span><span>♡</span><span>♡</span><span>♡</span><span>♡</span><span>♡</span>
+      </div>
+      <div class="rsvp__content rsvp-card">
+        <p class="eyebrow">RSVP</p>
+        <h2>Bạn sẽ</h2>
+        <div class="script-title rose">đến chứ?</div>
+        <p class="rsvp-lead">Chúng tôi rất mong được gặp bạn<br>trong ngày đặc biệt này.</p>
+
+        <form class="rsvp-form" id="rsvpForm">
+          <div class="rsvp-block">
+            <span class="rsvp-block__number">01</span>
+            <h3>XÁC NHẬN THAM DỰ</h3>
+            <label>Họ và tên<input type="text" name="name" autocomplete="name" placeholder="Tên của bạn" required></label>
+            <label>Số người tham dự<input type="number" name="guests" min="1" max="10" value="1" required></label>
+            <div class="rsvp-choice" role="group" aria-label="Xác nhận tham dự">
+              <label><input type="radio" name="attendance" value="yes" required><span>TÔI SẼ ĐẾN ♡</span></label>
+              <label><input type="radio" name="attendance" value="no"><span>RẤT TIẾC, TÔI KHÔNG THỂ ĐẾN</span></label>
+            </div>
+          </div>
+
+          <div class="rsvp-block rsvp-wish">
+            <span class="rsvp-block__number">02</span>
+            <h3>GỬI LỜI CHÚC</h3>
+            <p>Hãy để lại một lời chúc cho Thành Trung &amp; Nhật Trang ♡</p>
+            <textarea name="message" rows="5" placeholder="Viết một lời chúc thật đẹp cho chúng tôi..."></textarea>
+          </div>
+
+          <button class="rsvp-button" type="submit">GỬI XÁC NHẬN <span>→</span></button>
+        </form>
+
+        <div class="rsvp-success" id="rsvpSuccess" hidden>
+          <div class="rsvp-success__heart">♡</div>
+          <h3>CẢM ƠN BẠN</h3>
+          <p>Lời xác nhận và lời chúc của bạn đã được ghi nhận.<br>Hẹn gặp bạn trong ngày đặc biệt ấy.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="last-page section" id="last-page">
+    <div class="last-page__wash" aria-hidden="true"></div>
+    <div class="last-page__floral last-page__floral--left" aria-hidden="true"></div>
+    <div class="last-page__floral last-page__floral--right" aria-hidden="true"></div>
+
+    <div class="last-page__book story-reveal">
+      <div class="last-page__topline">
+        <span>THE WEDDING BOOK</span>
+        <span>15 · 05 · 2027</span>
+      </div>
+
+      <div class="last-page__rule" aria-hidden="true"></div>
+
+      <div class="last-page__chapter">THE LAST PAGE</div>
+
+      <h2>
+        Không phải<br>
+        <em>là kết thúc.</em>
+      </h2>
+
+      <p class="last-page__lead">
+        Chỉ là trang cuối cùng<br class="desktop-only">
+        của cuốn thiệp này.
+      </p>
+
+      <div class="last-page__divider" aria-hidden="true">
+        <span></span>
+        <b>♡</b>
+        <span></span>
+      </div>
+
+      <p class="last-page__body">
+        Từ ngày hôm nay, câu chuyện của chúng mình
+        sẽ được viết tiếp bằng những ngày bình thường —
+        những bữa cơm, những chuyến đi,
+        những buổi sáng vội vàng,
+        và rất nhiều khoảnh khắc nhỏ mà chúng mình
+        sẽ gọi là <i>nhà.</i>
+      </p>
+
+      <p class="last-page__script">
+        And the story goes on...
+      </p>
+
+      <div class="last-page__signature">
+        <span>With all our love,</span>
+        <strong>Thành Trung &amp; Nhật Trang</strong>
+        <small>15 · 05 · 2027</small>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const cover = document.getElementById('invitationCover');
+    const openInvitation = document.getElementById('openInvitation');
+    const weddingPage = document.getElementById('weddingPage');
+
+    let invitationOpening = false;
+
+    function updateCoverCountdown(){
+      const target = new Date('2027-05-15T00:00:00+07:00');
+      const now = new Date();
+      const diff = target.getTime() - now.getTime();
+      const days = Math.max(0, Math.ceil(diff / 86400000));
+      const el = document.getElementById('coverCountdown');
+      if (el) el.textContent = days;
+    }
+
+    updateCoverCountdown();
+    setInterval(updateCoverCountdown, 60000);
+
+    function preloadImage(src){
+      return new Promise(resolve => {
+        const img = new Image();
+        img.onload = img.onerror = () => resolve();
+        img.src = src;
+      });
+    }
+
+    async function openWeddingInvitation(){
+      if (invitationOpening || cover.classList.contains('is-open')) return;
+      invitationOpening = true;
+      cover.classList.add('is-loading');
+      openInvitation.setAttribute('aria-busy','true');
+
+      const startedAt = performance.now();
+      const firstScreenAssets = [
+        'assets/images/section-bg-01.jpg',
+        'assets/images/story/01-our-story-hero.jpg'
+      ];
+
+      // Chỉ chờ asset cần thiết cho màn hình đầu tiên.
+      // Không chặn việc mở thiệp bởi các section phía dưới.
+      await Promise.all(firstScreenAssets.map(preloadImage));
+      const elapsed = performance.now() - startedAt;
+      const minimumWait = 1700;
+      if (elapsed < minimumWait) {
+        await new Promise(resolve => setTimeout(resolve, minimumWait - elapsed));
+      }
+
+      cover.classList.add('is-opening');
+      weddingPage.setAttribute('aria-hidden','false');
+      document.body.classList.add('invitation-opened');
+      setTimeout(() => cover.classList.add('is-open'), 180);
+      setTimeout(() => {
+        cover.remove();
+        window.scrollTo({top:0, behavior:'instant'});
+      }, 1450);
+    }
+
+    function warmLaterAssets(){
+      const laterAssets = [
+        'assets/images/save-date-bg.jpg',
+        'assets/images/location-bg.jpg',
+        'assets/images/bokeh.jpg'
+      ];
+
+      laterAssets.forEach(src => {
+        const img = new Image();
+        img.decoding = 'async';
+        img.src = src;
+      });
+    }
+
+    window.addEventListener('load', () => {
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(warmLaterAssets, {timeout:2500});
+      } else {
+        setTimeout(warmLaterAssets, 1200);
+      }
+    });
+
+    openInvitation.addEventListener('click', openWeddingInvitation);
+    openInvitation.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        openWeddingInvitation();
+      }
+    });
+
+    const storyReveals = document.querySelectorAll('.story-reveal');
+    if ('IntersectionObserver' in window) {
+      const storyObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+      storyReveals.forEach(el => storyObserver.observe(el));
+    } else {
+      storyReveals.forEach(el => el.classList.add('is-visible'));
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', e => {
+        const target = document.querySelector(link.getAttribute('href'));
+        if (!target) return;
+        e.preventDefault();
+        target.scrollIntoView({behavior:'smooth'});
+      });
+    });
+  </script>
+  </div>
+
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-app.js";
+  import {
+    getFirestore,
+    collection,
+    writeBatch,
+    doc,
+    serverTimestamp
+  } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-firestore.js";
+
+  // FIREBASE — Thành Trung & Nhật Trang Wedding 2027
+  const firebaseConfig = {
+    apiKey: "AIzaSyD8Q_J2p6U6at2HeWfdc6bqEh04AfoDy0Q",
+    authDomain: "trung-trang-wedding-2027.firebaseapp.com",
+    projectId: "trung-trang-wedding-2027",
+    storageBucket: "trung-trang-wedding-2027.firebasestorage.app",
+    messagingSenderId: "594388235466",
+    appId: "1:594388235466:web:a10a124d5f07ef8f423033"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("rsvpForm");
+    const success = document.getElementById("rsvpSuccess");
+
+    if (!form || !success) return;
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const submitButton = form.querySelector('button[type="submit"]');
+      const originalButtonText = submitButton ? submitButton.innerHTML : "";
+
+      const formData = new FormData(form);
+
+      const name = String(formData.get("name") || "").trim();
+      const guests = Number.parseInt(String(formData.get("guests") || "1"), 10);
+      const attendance = String(formData.get("attendance") || "");
+      const message = String(formData.get("message") || "").trim();
+
+      if (!name || !Number.isInteger(guests) || guests < 1 || guests > 10) {
+        alert("Vui lòng kiểm tra họ tên và số người tham dự.");
+        return;
+      }
+
+      if (attendance !== "yes" && attendance !== "no") {
+        alert("Vui lòng chọn xác nhận tham dự.");
+        return;
+      }
+
+      if (message.length > 1000) {
+        alert("Lời chúc không được vượt quá 1000 ký tự.");
+        return;
+      }
+
+      try {
+        if (submitButton) {
+          submitButton.disabled = true;
+          submitButton.innerHTML = "ĐANG GỬI... <span>♡</span>";
+        }
+
+        // Lưu 2 bản ghi:
+        // 1) wedding_rsvp: dữ liệu RSVP đầy đủ, KHÔNG public read
+        // 2) wedding_wishes: chỉ tên + lời chúc, dùng cho màn hình trình chiếu
+        const batch = writeBatch(db);
+
+        const rsvpRef = doc(collection(db, "wedding_rsvp"));
+        const wishRef = doc(collection(db, "wedding_wishes"));
+
+        batch.set(rsvpRef, {
+          name,
+          guests,
+          attendance,
+          message,
+          createdAt: serverTimestamp()
+        });
+
+        // Chỉ đưa dữ liệu cần trình chiếu lên màn hình.
+        batch.set(wishRef, {
+          name,
+          message,
+          createdAt: serverTimestamp()
+        });
+
+        await batch.commit();
+
+        form.hidden = true;
+        success.hidden = false;
+        success.scrollIntoView({ behavior: "smooth", block: "center" });
+
+      } catch (error) {
+        console.error("RSVP Firebase error:", error);
+
+        if (submitButton) {
+          submitButton.disabled = false;
+          submitButton.innerHTML = originalButtonText;
+        }
+
+        alert("Chưa thể gửi xác nhận lúc này. Vui lòng kiểm tra kết nối mạng và thử lại.");
+      }
+    });
+  });
+</script>
+</body>
+</html>

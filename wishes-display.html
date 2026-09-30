@@ -1,0 +1,1734 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Sổ lời chúc — Thành Trung & Nhật Trang</title>
+<meta name="theme-color" content="#f8e7e5">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ivory:#fffaf7;
+  --paper:#fffdfb;
+  --blush:#f7e4e2;
+  --rose:#b86b78;
+  --rose-dark:#704951;
+  --ink:#463438;
+  --muted:#9b7b82;
+  --line:rgba(126,75,86,.16);
+}
+*{box-sizing:border-box}
+html,body{margin:0;width:100%;height:100%;overflow:hidden}
+body{
+  color:var(--ink);
+  font-family:"Cormorant Garamond",Georgia,serif;
+  background:
+    radial-gradient(circle at 50% 42%,rgba(255,255,255,.96) 0 16%,rgba(255,246,244,.72) 42%,rgba(245,220,220,.76) 100%),
+    linear-gradient(135deg,#fffaf8,#f6e1df);
+}
+.stage{
+  position:relative;width:100vw;height:100vh;overflow:hidden;isolation:isolate;
+  display:grid;place-items:center;
+}
+.stage::before{
+  content:"";position:absolute;inset:0;z-index:-5;
+  background:
+    linear-gradient(90deg,rgba(255,255,255,.25),transparent 22%,transparent 78%,rgba(255,255,255,.25)),
+    radial-gradient(circle at 50% 100%,rgba(184,107,120,.12),transparent 42%);
+}
+.glow{
+  position:absolute;border-radius:50%;filter:blur(8px);z-index:-4;pointer-events:none;
+}
+.glow--1{width:38vw;height:38vw;left:-14vw;top:-15vw;background:rgba(255,255,255,.78)}
+.glow--2{width:30vw;height:30vw;right:-10vw;bottom:-12vw;background:rgba(236,177,187,.24)}
+.floral{
+  position:absolute;z-index:-1;pointer-events:none;background-repeat:no-repeat;background-size:contain;
+  opacity:.78;filter:saturate(.72) contrast(.96);
+}
+.floral--tl{
+  width:27vw;height:55vh;left:-1vw;top:-3vh;
+  background-image:url("assets/images/floral-corner-left.png");background-position:left top;
+}
+.floral--br{
+  width:29vw;height:48vh;right:-1vw;bottom:-3vh;
+  background-image:url("assets/images/floral-corner-right.png");background-position:right bottom;
+  transform:scaleX(-1);
+}
+.petal{
+  position:absolute;z-index:-2;width:10px;height:15px;border-radius:70% 30% 70% 30%;
+  background:rgba(204,123,139,.32);box-shadow:0 2px 8px rgba(150,88,102,.08);
+  animation:drift linear infinite;
+}
+.petal:nth-child(1){left:8%;top:12%;animation-duration:12s}
+.petal:nth-child(2){left:18%;top:70%;animation-duration:15s;animation-delay:-4s}
+.petal:nth-child(3){left:78%;top:18%;animation-duration:14s;animation-delay:-7s}
+.petal:nth-child(4){left:88%;top:64%;animation-duration:17s;animation-delay:-9s}
+.petal:nth-child(5){left:54%;top:8%;animation-duration:16s;animation-delay:-11s}
+.petal:nth-child(6){left:44%;top:88%;animation-duration:13s;animation-delay:-3s}
+@keyframes drift{
+  0%{transform:translate3d(0,-10px) rotate(0deg);opacity:0}
+  12%{opacity:.65}
+  50%{transform:translate3d(35px,42vh) rotate(150deg);opacity:.45}
+  100%{transform:translate3d(-20px,90vh) rotate(300deg);opacity:0}
+}
+
+
+.iphone{
+  position:relative;
+  width:min(46vw,560px);
+  height:min(88vh,900px);
+  z-index:2;
+  filter:drop-shadow(0 38px 55px rgba(77,43,52,.24));
+}
+.iphone__frame{
+  position:absolute;inset:0;
+  padding:9px;
+  border-radius:58px;
+  background:
+    linear-gradient(145deg,#f9f9f7 0%,#cfcfcd 42%,#fafaf8 72%,#bcbdbb 100%);
+  box-shadow:
+    inset 0 0 0 1px rgba(255,255,255,.9),
+    inset 0 0 0 3px rgba(80,75,73,.12),
+    0 0 0 1px rgba(74,54,59,.14);
+}
+.iphone__screen{
+  position:relative;width:100%;height:100%;overflow:hidden;
+  border-radius:50px;
+  background:
+    radial-gradient(circle at 50% 15%,rgba(255,255,255,.96),transparent 28%),
+    radial-gradient(circle at 15% 78%,rgba(235,177,188,.22),transparent 35%),
+    linear-gradient(160deg,#fffaf8,#f6e3e1 58%,#fff9f6);
+  border:1px solid rgba(255,255,255,.85);
+}
+.island{
+  position:absolute;z-index:8;top:14px;left:50%;transform:translateX(-50%);
+  width:94px;height:27px;border-radius:18px;background:#171518;
+  box-shadow:0 2px 5px rgba(0,0,0,.2);
+}
+.iphone__status{
+  position:absolute;top:14px;left:24px;right:24px;z-index:7;
+  display:flex;justify-content:space-between;
+  padding:1px 4px;
+  color:#4d3b3f;
+  font:600 11px/1 "Montserrat",Arial,sans-serif;
+}
+.iphone__header{
+  position:absolute;left:0;right:0;top:55px;height:86px;
+  display:flex;align-items:center;justify-content:center;gap:11px;
+  padding:0 22px;
+  border-bottom:1px solid rgba(126,75,86,.12);
+  background:rgba(255,250,248,.54);
+  backdrop-filter:blur(14px);
+}
+.iphone__avatar{
+  width:38px;height:38px;border-radius:50%;display:grid;place-items:center;
+  color:#fff;background:linear-gradient(145deg,#c88994,#8f5a66);
+  font:600 10px/1 "Montserrat",Arial,sans-serif;
+  box-shadow:0 4px 12px rgba(126,75,86,.2);
+}
+.iphone__avatar span{font-family:Georgia,serif;font-style:italic}
+.iphone__contact{
+  color:#4c373c;
+  font:600 13px/1.15 "Montserrat",Arial,sans-serif;
+}
+.iphone__sub{
+  margin-top:4px;color:#a17f86;
+  font:500 8px/1.2 "Montserrat",Arial,sans-serif;
+  letter-spacing:.16em;text-transform:uppercase;
+}
+.iphone__conversation{
+  position:absolute;top:141px;bottom:72px;left:0;right:0;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:30px 34px 36px;
+}
+.iphone__date{
+  margin-bottom:15px;color:#aa8c92;
+  font:600 8px/1 "Montserrat",Arial,sans-serif;letter-spacing:.2em;
+}
+.bubble{
+  max-width:92%;text-align:center;border-radius:30px;
+  box-shadow:0 8px 25px rgba(112,73,81,.08);
+}
+.bubble--system{
+  padding:9px 14px;margin-bottom:11px;
+  color:#8d6870;background:rgba(255,255,255,.68);
+  font:500 8px/1.2 "Montserrat",Arial,sans-serif;
+  letter-spacing:.08em;text-transform:uppercase;
+}
+.bubble--wish{
+  padding:30px 28px 22px;
+  background:rgba(255,255,255,.91);
+  border:1px solid rgba(184,107,120,.13);
+}
+.bubble--wish .message{
+  margin:0;color:#553b41;
+  font-size:clamp(34px,4.1vw,68px);
+  line-height:1.13;font-weight:500;
+}
+.bubble--wish .message::before,.bubble--wish .message::after{color:#bd7b87}
+.bubble--wish .from{
+  margin-top:14px;font-size:clamp(12px,1vw,17px);color:#805761;
+}
+.iphone__heart{
+  margin-top:16px;color:#b86b78;font-size:20px;
+}
+.iphone__conversation .time{
+  margin-top:7px;font-size:7px;
+}
+.iphone__composer{
+  position:absolute;left:16px;right:16px;bottom:25px;height:39px;
+  display:flex;align-items:center;gap:8px;
+  padding:0 9px;border:1px solid rgba(126,75,86,.12);
+  border-radius:21px;background:rgba(255,255,255,.66);
+  color:#9d858b;backdrop-filter:blur(14px);
+  font:500 9px/1 "Montserrat",Arial,sans-serif;
+}
+.iphone__composer span{font-size:17px;color:#ae7b84}
+.iphone__composer div{flex:1}
+.iphone__home{
+  position:absolute;z-index:9;bottom:8px;left:50%;transform:translateX(-50%);
+  width:94px;height:4px;border-radius:99px;background:rgba(46,38,40,.75);
+}
+.iphone__side{
+  position:absolute;z-index:-1;width:5px;border-radius:5px;background:#b9b9b7;
+  box-shadow:inset 0 0 1px rgba(255,255,255,.8);
+}
+.iphone__side--left{left:-3px;top:170px;height:58px}
+.iphone__side--right{right:-3px;top:210px;height:92px}
+@media (max-aspect-ratio:4/3){
+  .iphone{width:min(52vw,560px);height:min(88vh,900px)}
+}
+@media (orientation:portrait){
+  .iphone{width:78vw;height:82vh}
+  .iphone__header{top:52px}
+  .iphone__conversation{top:137px}
+}
+
+.top{
+  position:absolute;top:3.2vh;left:0;right:0;text-align:center;
+  z-index:3;
+}
+.kicker{
+  font:600 clamp(9px,.75vw,13px)/1.2 "Montserrat",Arial,sans-serif;
+  letter-spacing:.42em;color:#8c6870;text-transform:uppercase;
+}
+.names{
+  margin-top:.8vh;font-size:clamp(24px,3vw,52px);line-height:1;
+  letter-spacing:.055em;color:#4a3439;font-weight:500;
+}
+.names span{color:var(--rose);font-style:italic}
+
+.card{
+  position:relative;width:min(78vw,1180px);height:min(67vh,720px);
+  padding:7vh 8vw 6vh;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;
+  background:
+    linear-gradient(rgba(255,253,251,.86),rgba(255,249,247,.84)),
+    url("assets/images/cloud-soft.jpg") center/cover;
+  border:1px solid rgba(125,82,91,.18);
+  border-radius:28px;
+  box-shadow:
+    0 28px 80px rgba(103,65,74,.14),
+    0 0 0 7px rgba(255,255,255,.42),
+    inset 0 0 0 1px rgba(255,255,255,.75);
+  backdrop-filter:blur(10px);
+  overflow:hidden;
+}
+.card::before{
+  content:"";position:absolute;inset:20px;border:1px solid var(--line);
+  border-radius:18px;pointer-events:none;
+}
+.card::after{
+  content:"";position:absolute;left:50%;bottom:-15%;transform:translateX(-50%);
+  width:70%;height:50%;border-radius:50%;
+  background:rgba(232,173,183,.11);filter:blur(35px);pointer-events:none;
+}
+.corner{
+  position:absolute;width:115px;height:115px;opacity:.28;pointer-events:none;
+  background:url("assets/images/floral-bottom-left.png") left bottom/contain no-repeat;
+}
+.corner--tl{left:18px;top:18px;transform:rotate(90deg)}
+.corner--br{right:18px;bottom:18px;transform:rotate(270deg)}
+.inner{position:relative;z-index:2;max-width:920px}
+.label{
+  font:600 clamp(9px,.75vw,13px)/1.2 "Montserrat",Arial,sans-serif;
+  letter-spacing:.34em;color:#9a737b;text-transform:uppercase;
+}
+.ornament{
+  margin:2vh 0 1.3vh;font-size:clamp(23px,2.3vw,38px);color:var(--rose);
+}
+.message{
+  margin:0 auto;
+  max-width:850px;
+  font-size:clamp(34px,4.6vw,78px);
+  line-height:1.12;
+  color:#51383e;
+  font-weight:500;
+  text-wrap:balance;
+}
+.message::before{content:"“";color:var(--rose);margin-right:.05em}
+.message::after{content:"”";color:var(--rose);margin-left:.05em}
+.divider{
+  display:flex;align-items:center;gap:18px;width:min(420px,55vw);margin:3.5vh auto 2vh;
+  color:#bd8a94;font:500 12px "Montserrat",Arial,sans-serif;letter-spacing:.15em;
+}
+.divider::before,.divider::after{
+  content:"";height:1px;flex:1;background:linear-gradient(90deg,transparent,var(--line));
+}
+.divider::after{transform:scaleX(-1)}
+.from{
+  font-size:clamp(20px,2vw,32px);letter-spacing:.06em;color:#805761;
+}
+.time{
+  margin-top:1.5vh;font:500 clamp(8px,.65vw,11px)/1.2 "Montserrat",Arial,sans-serif;
+  letter-spacing:.2em;color:#a88c91;text-transform:uppercase;
+}
+.meta{
+  position:absolute;bottom:2.2vh;left:0;right:0;z-index:2;
+  display:flex;justify-content:center;gap:34px;
+  font:500 9px/1.2 "Montserrat",Arial,sans-serif;letter-spacing:.24em;color:#ad9095;
+  text-transform:uppercase;
+}
+.footer{
+  position:absolute;bottom:4.2vh;left:0;right:0;text-align:center;z-index:3;
+}
+.footer .small{
+  font:500 9px/1.2 "Montserrat",Arial,sans-serif;letter-spacing:.34em;color:#96767d;
+}
+.progress{
+  position:absolute;left:12vw;right:12vw;bottom:1.5vh;height:2px;
+  background:rgba(126,75,86,.1);overflow:hidden;border-radius:99px;z-index:4;
+}
+.progress i{
+  display:block;height:100%;width:0;
+  background:linear-gradient(90deg,rgba(184,107,120,.2),rgba(184,107,120,.8));
+}
+.fade{animation:fadeIn .85s cubic-bezier(.2,.7,.2,1) both}
+@keyframes fadeIn{
+  from{opacity:0;transform:translateY(18px) scale(.985)}
+  to{opacity:1;transform:none}
+}
+.empty{font-size:clamp(24px,3vw,44px);color:#8e7479}
+@media (max-aspect-ratio:4/3){
+  .card{width:88vw;height:65vh;padding:7vh 8vw}
+  .floral--tl{width:34vw;height:42vh}
+  .floral--br{width:35vw;height:38vh}
+}
+@media (orientation:portrait){
+  
+.iphone{
+  position:relative;
+  width:min(46vw,560px);
+  height:min(88vh,900px);
+  z-index:2;
+  filter:drop-shadow(0 38px 55px rgba(77,43,52,.24));
+}
+.iphone__frame{
+  position:absolute;inset:0;
+  padding:9px;
+  border-radius:58px;
+  background:
+    linear-gradient(145deg,#f9f9f7 0%,#cfcfcd 42%,#fafaf8 72%,#bcbdbb 100%);
+  box-shadow:
+    inset 0 0 0 1px rgba(255,255,255,.9),
+    inset 0 0 0 3px rgba(80,75,73,.12),
+    0 0 0 1px rgba(74,54,59,.14);
+}
+.iphone__screen{
+  position:relative;width:100%;height:100%;overflow:hidden;
+  border-radius:50px;
+  background:
+    radial-gradient(circle at 50% 15%,rgba(255,255,255,.96),transparent 28%),
+    radial-gradient(circle at 15% 78%,rgba(235,177,188,.22),transparent 35%),
+    linear-gradient(160deg,#fffaf8,#f6e3e1 58%,#fff9f6);
+  border:1px solid rgba(255,255,255,.85);
+}
+.island{
+  position:absolute;z-index:8;top:14px;left:50%;transform:translateX(-50%);
+  width:94px;height:27px;border-radius:18px;background:#171518;
+  box-shadow:0 2px 5px rgba(0,0,0,.2);
+}
+.iphone__status{
+  position:absolute;top:14px;left:24px;right:24px;z-index:7;
+  display:flex;justify-content:space-between;
+  padding:1px 4px;
+  color:#4d3b3f;
+  font:600 11px/1 "Montserrat",Arial,sans-serif;
+}
+.iphone__header{
+  position:absolute;left:0;right:0;top:55px;height:86px;
+  display:flex;align-items:center;justify-content:center;gap:11px;
+  padding:0 22px;
+  border-bottom:1px solid rgba(126,75,86,.12);
+  background:rgba(255,250,248,.54);
+  backdrop-filter:blur(14px);
+}
+.iphone__avatar{
+  width:38px;height:38px;border-radius:50%;display:grid;place-items:center;
+  color:#fff;background:linear-gradient(145deg,#c88994,#8f5a66);
+  font:600 10px/1 "Montserrat",Arial,sans-serif;
+  box-shadow:0 4px 12px rgba(126,75,86,.2);
+}
+.iphone__avatar span{font-family:Georgia,serif;font-style:italic}
+.iphone__contact{
+  color:#4c373c;
+  font:600 13px/1.15 "Montserrat",Arial,sans-serif;
+}
+.iphone__sub{
+  margin-top:4px;color:#a17f86;
+  font:500 8px/1.2 "Montserrat",Arial,sans-serif;
+  letter-spacing:.16em;text-transform:uppercase;
+}
+.iphone__conversation{
+  position:absolute;top:141px;bottom:72px;left:0;right:0;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:30px 34px 36px;
+}
+.iphone__date{
+  margin-bottom:15px;color:#aa8c92;
+  font:600 8px/1 "Montserrat",Arial,sans-serif;letter-spacing:.2em;
+}
+.bubble{
+  max-width:92%;text-align:center;border-radius:30px;
+  box-shadow:0 8px 25px rgba(112,73,81,.08);
+}
+.bubble--system{
+  padding:9px 14px;margin-bottom:11px;
+  color:#8d6870;background:rgba(255,255,255,.68);
+  font:500 8px/1.2 "Montserrat",Arial,sans-serif;
+  letter-spacing:.08em;text-transform:uppercase;
+}
+.bubble--wish{
+  padding:30px 28px 22px;
+  background:rgba(255,255,255,.91);
+  border:1px solid rgba(184,107,120,.13);
+}
+.bubble--wish .message{
+  margin:0;color:#553b41;
+  font-size:clamp(34px,4.1vw,68px);
+  line-height:1.13;font-weight:500;
+}
+.bubble--wish .message::before,.bubble--wish .message::after{color:#bd7b87}
+.bubble--wish .from{
+  margin-top:14px;font-size:clamp(12px,1vw,17px);color:#805761;
+}
+.iphone__heart{
+  margin-top:16px;color:#b86b78;font-size:20px;
+}
+.iphone__conversation .time{
+  margin-top:7px;font-size:7px;
+}
+.iphone__composer{
+  position:absolute;left:16px;right:16px;bottom:25px;height:39px;
+  display:flex;align-items:center;gap:8px;
+  padding:0 9px;border:1px solid rgba(126,75,86,.12);
+  border-radius:21px;background:rgba(255,255,255,.66);
+  color:#9d858b;backdrop-filter:blur(14px);
+  font:500 9px/1 "Montserrat",Arial,sans-serif;
+}
+.iphone__composer span{font-size:17px;color:#ae7b84}
+.iphone__composer div{flex:1}
+.iphone__home{
+  position:absolute;z-index:9;bottom:8px;left:50%;transform:translateX(-50%);
+  width:94px;height:4px;border-radius:99px;background:rgba(46,38,40,.75);
+}
+.iphone__side{
+  position:absolute;z-index:-1;width:5px;border-radius:5px;background:#b9b9b7;
+  box-shadow:inset 0 0 1px rgba(255,255,255,.8);
+}
+.iphone__side--left{left:-3px;top:170px;height:58px}
+.iphone__side--right{right:-3px;top:210px;height:92px}
+@media (max-aspect-ratio:4/3){
+  .iphone{width:min(52vw,560px);height:min(88vh,900px)}
+}
+@media (orientation:portrait){
+  .iphone{width:78vw;height:82vh}
+  .iphone__header{top:52px}
+  .iphone__conversation{top:137px}
+}
+
+.top{top:3vh}
+  .names{font-size:clamp(23px,6vw,38px)}
+  .card{width:90vw;height:62vh;padding:7vh 7vw}
+  .message{font-size:clamp(30px,7.5vw,54px)}
+  .floral--tl{width:42vw;height:34vh;opacity:.55}
+  .floral--br{width:43vw;height:31vh;opacity:.55}
+  .meta{gap:15px;font-size:7px}
+  .footer{bottom:2.8vh}
+}
+.kiosk-button{
+  position:fixed;left:50%;bottom:28px;transform:translateX(-50%);
+  z-index:30;border:1px solid rgba(112,73,81,.14);border-radius:999px;
+  padding:10px 16px;background:rgba(255,253,251,.82);
+  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  color:#704951;font:600 9px/1 "Montserrat",Arial,sans-serif;
+  letter-spacing:.12em;box-shadow:0 8px 25px rgba(85,50,58,.08);
+  cursor:pointer;transition:opacity .35s,transform .35s;
+}
+.kiosk-button.hidden{opacity:0;pointer-events:none;transform:translateX(-50%) translateY(8px)}
+.wake-status{
+  position:fixed;left:50%;bottom:12px;transform:translateX(-50%);
+  z-index:29;font:500 8px/1.2 "Montserrat",Arial,sans-serif;
+  letter-spacing:.08em;color:#92757c;opacity:.85;pointer-events:none;
+}
+@media(max-width:700px){
+  .kiosk-button{bottom:22px;font-size:8px;padding:9px 13px}
+}
+.kiosk-panel{
+  position:fixed;inset:0;z-index:100;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;padding:28px;text-align:center;
+  background:radial-gradient(circle at 50% 35%,rgba(255,245,244,.98),rgba(247,239,237,.99) 58%,rgba(237,222,220,.99));
+  color:#463438;
+}
+.kiosk-panel.hidden{display:none}
+.kiosk-panel__eyebrow{font:600 9px/1 "Montserrat",Arial,sans-serif;letter-spacing:.3em;color:#b86b78}
+.kiosk-panel__title{margin-top:14px;font:500 clamp(38px,6vw,72px)/.95 "Cormorant Garamond",Georgia,serif}
+.kiosk-panel__text{max-width:560px;margin:18px auto 0;font:400 12px/1.7 "Montserrat",Arial,sans-serif;color:#92757c}
+.kiosk-panel__actions{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:28px}
+.kiosk-primary,.kiosk-secondary{
+  border-radius:999px;padding:13px 20px;cursor:pointer;
+  font:600 10px/1 "Montserrat",Arial,sans-serif;letter-spacing:.12em;
+}
+.kiosk-primary{border:0;background:#b86b78;color:#fff;box-shadow:0 10px 28px rgba(184,107,120,.22)}
+.kiosk-secondary{border:1px solid rgba(112,73,81,.16);background:rgba(255,255,255,.7);color:#704951}
+.kiosk-panel__hint{min-height:20px;margin-top:16px;font:500 9px/1.4 "Montserrat",Arial,sans-serif;color:#92757c}
+.kiosk-bar{
+  position:fixed;left:50%;bottom:12px;transform:translateX(-50%);
+  z-index:90;display:flex;align-items:center;gap:8px;padding:8px 12px;
+  border:1px solid rgba(112,73,81,.12);border-radius:999px;
+  background:rgba(255,253,251,.72);backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);font:600 8px/1 "Montserrat",Arial,sans-serif;
+  letter-spacing:.08em;color:#704951;box-shadow:0 8px 24px rgba(85,50,58,.08)
+}
+.kiosk-bar[hidden]{display:none}
+#kioskLiveDot{width:6px;height:6px;border-radius:50%;background:#587665;box-shadow:0 0 0 3px rgba(88,118,101,.12)}
+.kiosk-sep{opacity:.35}
+.kiosk-bar button{border:0;background:transparent;color:#92757c;font:600 8px "Montserrat";cursor:pointer;letter-spacing:.08em}
+@media(max-width:700px){
+  .kiosk-panel__actions{width:100%;flex-direction:column;max-width:320px}
+  .kiosk-primary,.kiosk-secondary{width:100%}
+}
+
+@media (orientation:landscape){
+  .top{display:none !important}
+  .floral--br{display:none !important}
+}
+
+@media (orientation:landscape){
+  .iphone__conversation{
+    top:141px;
+    bottom:72px;
+    justify-content:center;
+    overflow:hidden;
+  }
+
+  .bubble--wish{
+    width:min(76%,620px);
+    height:min(52vh,470px);
+    min-height:260px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding:26px 30px 20px;
+    overflow:hidden;
+  }
+
+  .bubble--wish .message{
+    width:100%;
+    max-height:100%;
+    overflow:hidden;
+    font-size:clamp(18px,3.2vw,54px);
+    line-height:1.12;
+    display:block;
+  }
+
+  .bubble--wish .from{
+    flex:0 0 auto;
+  }
+}
+
+/* ===== WEDDING BOOK VISUAL — presentation layer ===== */
+.wedding-book{
+  position:relative;
+  width:min(980px,88vw);
+  height:min(650px,72vh);
+  margin:0 auto;
+}
+.wedding-book__page{
+  position:relative;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  border-radius:14px 24px 24px 14px;
+  background:
+    radial-gradient(circle at 15% 15%,rgba(203,154,143,.11),transparent 26%),
+    radial-gradient(circle at 87% 82%,rgba(177,119,131,.09),transparent 28%),
+    linear-gradient(110deg,#fffdfa,#fbf3ef 52%,#fffaf6);
+  border:1px solid rgba(112,73,81,.12);
+  box-shadow:0 28px 70px rgba(77,48,54,.14),inset 0 1px rgba(255,255,255,.95);
+}
+.wedding-book__page:before{
+  content:"";
+  position:absolute;left:50%;top:6%;bottom:6%;width:1px;
+  background:linear-gradient(transparent,rgba(112,73,81,.10),transparent);
+}
+.wedding-book__frame{
+  position:absolute;inset:18px;
+  border:1px solid rgba(112,73,81,.08);
+  border-radius:9px 17px 17px 9px;
+  pointer-events:none;
+}
+.wedding-book__floral{
+  position:absolute;z-index:1;pointer-events:none;
+  width:250px;height:250px;background-size:contain;background-repeat:no-repeat;
+  opacity:.20;
+}
+.wedding-book__floral--tl{
+  left:-54px;top:-54px;
+  background-image:url("assets/images/floral-corner-left.png");
+  background-position:top left;
+}
+.wedding-book__floral--br{
+  right:-64px;bottom:-64px;
+  background-image:url("assets/images/floral-corner-right.png");
+  background-position:bottom right;
+  transform:rotate(180deg);
+}
+.wedding-book__heading{
+  position:absolute;top:30px;left:0;right:0;text-align:center;z-index:3;
+}
+.wedding-book__kicker{
+  font:600 9px/1 "Montserrat",Arial,sans-serif;
+  letter-spacing:.34em;color:#a66b78;
+}
+.wedding-book__title{
+  margin-top:10px;
+  font:400 clamp(30px,4vw,52px)/.95 "Cormorant Garamond",Georgia,serif;
+  color:#4a383c;
+}
+.wedding-book__subtitle{
+  margin-top:8px;
+  font:500 8px/1 "Montserrat",Arial,sans-serif;
+  letter-spacing:.20em;color:#a58a8f;
+}
+.wedding-book__ornament{
+  position:absolute;left:50%;top:24%;
+  transform:translateX(-50%);color:#b77a86;font-size:16px;z-index:3;
+}
+.wedding-book__wish-area{
+  position:absolute;z-index:3;
+  left:9%;right:9%;top:29%;bottom:17%;
+  display:flex;align-items:center;justify-content:center;
+}
+.wedding-book__wish{
+  width:min(690px,88%);
+  height:min(350px,76%);
+  min-height:220px;
+  box-sizing:border-box;
+  padding:32px 50px 22px;
+  border:1px solid rgba(112,73,81,.10);
+  border-radius:5px;
+  background:rgba(255,255,255,.74);
+  box-shadow:0 15px 42px rgba(77,48,54,.07);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;overflow:hidden;
+}
+.wedding-book__wish .message{
+  width:100%;max-height:100%;overflow:hidden;
+  font:400 clamp(28px,4vw,56px)/1.12 "Cormorant Garamond",Georgia,serif;
+  color:#4a383c;
+}
+.wedding-book__wish .from{
+  flex:0 0 auto;margin-top:17px;
+  font:400 12px/1 "Cormorant Garamond",Georgia,serif;
+  letter-spacing:.08em;color:#98747c;
+}
+.wedding-book__heart{
+  position:absolute;left:50%;bottom:9%;
+  transform:translateX(-50%);
+  color:#bd7f8c;font:400 22px/1 Georgia,serif;z-index:3;
+}
+.wedding-book__date{
+  position:absolute;left:0;right:0;bottom:4.5%;
+  text-align:center;
+  font:500 8px/1 "Montserrat",Arial,sans-serif;
+  letter-spacing:.16em;color:#ab8e93;z-index:3;
+}
+.wedding-book__note{
+  position:absolute;right:38px;bottom:28px;
+  font:italic 11px/1 "Cormorant Garamond",Georgia,serif;
+  color:#a58a8f;z-index:3;
+}
+.wedding-book__progress{
+  position:absolute;left:24%;right:24%;bottom:2.5%;
+  height:2px;background:rgba(112,73,81,.08);overflow:hidden;z-index:4;
+}
+.wedding-book__progress i{display:block;width:0;height:100%;background:rgba(166,107,120,.58)}
+
+#card.fade .wedding-book__wish{
+  animation:weddingWishFade .55s ease;
+}
+@keyframes weddingWishFade{
+  from{opacity:.2;transform:translateY(7px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+@media (orientation:landscape){
+  .wedding-book{height:min(650px,70vh)}
+  .wedding-book__wish{
+    width:min(690px,86%);
+    height:min(350px,70%);
+  }
+}
+@media (orientation:portrait){
+  .wedding-book{width:92vw;height:72vh}
+  .wedding-book__wish-area{left:6%;right:6%;top:29%;bottom:17%}
+  .wedding-book__wish{width:92%;height:64%;padding:26px 28px 20px}
+  .wedding-book__floral{opacity:.16}
+}
+
+/* ===== SUNFLOWER WEDDING GUESTBOOK — visual layer only ===== */
+.wedding-book__page{
+  background:
+    linear-gradient(rgba(255,248,242,.06),rgba(255,248,242,.06)),
+    url("assets/images/wedding-guestbook-sunflower-bg.jpg") center center / cover no-repeat;
+  border:1px solid rgba(135,91,64,.12);
+}
+.wedding-book__frame{border-color:rgba(255,255,255,.62)}
+.wedding-book__heading,
+.wedding-book__ornament,
+.wedding-book__floral,
+.wedding-book__note{display:none !important}
+.wedding-book__wish-area{
+  left:20%;right:20%;top:35%;bottom:24%;
+}
+.wedding-book__wish{
+  width:min(760px,92%);
+  height:min(330px,78%);
+  min-height:220px;
+  padding:34px 58px 26px;
+  border:1px solid rgba(178,128,73,.30);
+  border-radius:22px;
+  background:rgba(255,250,244,.91);
+  box-shadow:0 18px 50px rgba(83,53,40,.14),inset 0 1px rgba(255,255,255,.95);
+  backdrop-filter:blur(3px);
+  -webkit-backdrop-filter:blur(3px);
+}
+.wedding-book__wish:before,
+.wedding-book__wish:after{
+  content:"✿";
+  position:absolute;
+  color:rgba(221,166,52,.72);
+  font-size:26px;
+  pointer-events:none;
+}
+.wedding-book__wish:before{left:20px;top:18px}
+.wedding-book__wish:after{right:20px;bottom:18px}
+.wedding-book__wish .message{
+  color:#4a3630;
+  font-size:clamp(30px,4vw,58px);
+  line-height:1.12;
+  max-height:100%;
+}
+.wedding-book__wish .from{
+  color:#8d6857;
+  margin-top:18px;
+}
+.wedding-book__heart{
+  bottom:10.5%;
+  color:#b87962;
+}
+.wedding-book__date{
+  bottom:5.8%;
+  width:max-content;
+  left:50%;right:auto;
+  transform:translateX(-50%);
+  padding:6px 15px;
+  border-radius:999px;
+  background:rgba(255,248,240,.88);
+  color:#8c6b5f;
+  box-shadow:0 4px 14px rgba(76,48,39,.06);
+}
+.wedding-book__progress{
+  left:28%;right:28%;bottom:2.7%;
+  background:rgba(255,255,255,.42);
+}
+.wedding-book__progress i{background:rgba(184,128,48,.72)}
+
+@media (orientation:landscape){
+  .wedding-book{width:92vw;height:74vh;max-width:1500px}
+  .wedding-book__wish-area{left:19%;right:19%;top:34%;bottom:23%}
+  .wedding-book__wish{width:min(760px,88%);height:min(330px,74%)}
+}
+@media (orientation:portrait){
+  .wedding-book{width:94vw;height:70vh}
+  .wedding-book__wish-area{left:8%;right:8%;top:34%;bottom:21%}
+  .wedding-book__wish{width:92%;height:62%;padding:26px 28px 20px}
+}
+
+/* =========================================================
+   SUNFLOWER RENDER MATCH V3
+   Visual overrides only — JavaScript untouched.
+   Target: 16:9 landscape display matching approved render.
+   ========================================================= */
+html,body{
+  width:100%;
+  height:100%;
+  min-height:100%;
+}
+body{
+  overflow:hidden;
+  background:#f8eee9 !important;
+}
+
+/* Remove the old "paper/card inside page" composition. */
+.wedding-book.card{
+  position:fixed !important;
+  inset:0 !important;
+  width:100vw !important;
+  height:100vh !important;
+  max-width:none !important;
+  margin:0 !important;
+  display:block !important;
+}
+.wedding-book__page{
+  position:absolute !important;
+  inset:0 !important;
+  width:100% !important;
+  height:100% !important;
+  max-width:none !important;
+  border:0 !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+  overflow:hidden !important;
+  background:
+    linear-gradient(rgba(255,247,244,.10),rgba(255,247,244,.10)),
+    url("assets/images/wedding-guestbook-sunflower-bg.jpg") center center / cover no-repeat !important;
+}
+.wedding-book__page:before,
+.wedding-book__page:after,
+.wedding-book__frame,
+.wedding-book__floral,
+.wedding-book__ornament,
+.wedding-book__note{
+  display:none !important;
+}
+
+/* Header exactly belongs to the live HTML, not to the image. */
+.wedding-book__heading{
+  display:block !important;
+  position:absolute !important;
+  top:9.5vh !important;
+  left:0 !important;
+  right:0 !important;
+  text-align:center !important;
+  z-index:10 !important;
+  color:#4b3437 !important;
+}
+.wedding-book__kicker{
+  font-size:clamp(9px,1vw,14px) !important;
+  letter-spacing:.34em !important;
+  color:#86575f !important;
+}
+.wedding-book__title{
+  margin-top:13px !important;
+  font-size:clamp(38px,5.1vw,82px) !important;
+  line-height:.95 !important;
+  color:#38272a !important;
+  text-shadow:0 1px 0 rgba(255,255,255,.5);
+}
+.wedding-book__subtitle{
+  margin-top:13px !important;
+  font-size:clamp(8px,.9vw,13px) !important;
+  letter-spacing:.23em !important;
+  color:#815d63 !important;
+}
+
+/* Center wish card — same visual proportion as the approved render. */
+.wedding-book__wish-area{
+  position:absolute !important;
+  left:0 !important;
+  right:0 !important;
+  top:37% !important;
+  bottom:auto !important;
+  height:31.5vh !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  z-index:12 !important;
+}
+.wedding-book__wish{
+  position:relative !important;
+  width:min(48vw,780px) !important;
+  height:min(30vh,330px) !important;
+  min-height:230px !important;
+  max-height:330px !important;
+  padding:30px 72px !important;
+  box-sizing:border-box !important;
+  border:1px solid rgba(177,124,69,.42) !important;
+  border-radius:22px !important;
+  background:rgba(255,249,243,.78) !important;
+  box-shadow:
+    0 18px 50px rgba(91,61,43,.16),
+    inset 0 1px 0 rgba(255,255,255,.95) !important;
+  backdrop-filter:blur(2px);
+  overflow:hidden !important;
+}
+.wedding-book__wish:before,
+.wedding-book__wish:after{
+  content:"✿" !important;
+  position:absolute !important;
+  color:#d8a83f !important;
+  font-size:25px !important;
+  line-height:1 !important;
+  opacity:.95 !important;
+  display:block !important;
+}
+.wedding-book__wish:before{left:24px !important;top:20px !important}
+.wedding-book__wish:after{right:24px !important;bottom:20px !important}
+
+.wedding-book__wish .message{
+  width:100% !important;
+  max-height:calc(100% - 35px) !important;
+  overflow:hidden !important;
+  text-align:center !important;
+  font-family:"Cormorant Garamond",Georgia,serif !important;
+  font-size:clamp(25px,3.2vw,54px) !important;
+  line-height:1.12 !important;
+  font-weight:400 !important;
+  color:#4b373a !important;
+}
+.wedding-book__wish .from{
+  margin-top:14px !important;
+  flex:0 0 auto !important;
+  font-family:"Cormorant Garamond",Georgia,serif !important;
+  font-size:clamp(11px,1vw,16px) !important;
+  color:#947078 !important;
+  letter-spacing:.06em !important;
+}
+
+/* Keep timestamp low and subtle like the render. */
+.wedding-book__heart{
+  display:block !important;
+  position:absolute !important;
+  left:50% !important;
+  bottom:17.2vh !important;
+  transform:translateX(-50%) !important;
+  color:#bd7f8c !important;
+  font-size:24px !important;
+  z-index:12 !important;
+}
+.wedding-book__date{
+  display:block !important;
+  position:absolute !important;
+  left:0 !important;
+  right:0 !important;
+  bottom:12.8vh !important;
+  z-index:12 !important;
+  color:#80676c !important;
+  font-size:10px !important;
+  letter-spacing:.14em !important;
+}
+
+/* Progress is deliberately almost invisible in the visual. */
+.wedding-book__progress{
+  display:none !important;
+}
+
+/* Keep the bottom kiosk control as the only utility UI. */
+.kiosk-bar{
+  z-index:100 !important;
+}
+
+/* Landscape is the intended wedding-display mode. */
+@media (orientation:landscape){
+  .wedding-book__title{font-size:clamp(44px,5.0vw,80px) !important}
+  .wedding-book__wish{
+    width:min(50vw,800px) !important;
+    height:min(31vh,335px) !important;
+  }
+}
+@media (orientation:portrait){
+  .wedding-book__heading{top:7vh !important}
+  .wedding-book__wish-area{top:34% !important;height:34vh !important}
+  .wedding-book__wish{
+    width:86vw !important;
+    height:32vh !important;
+    min-height:220px !important;
+    padding:26px 30px !important;
+  }
+  .wedding-book__title{font-size:clamp(32px,8vw,52px) !important}
+}
+
+/* V4 layout cleanup: one header, exact names, centered date */
+.wedding-book__date{
+  width:auto !important;
+  max-width:none !important;
+  left:0 !important;
+  right:0 !important;
+  margin:0 !important;
+  transform:none !important;
+  text-align:center !important;
+}
+.top{display:none !important}.footer{display:none !important}
+/* =========================================================
+   V5 — WEDDING BOOK CONCEPT
+   Full sunflower scene + translucent editorial book page.
+   Visual only; Firebase/queue/slideshow/Wake Lock untouched.
+   ========================================================= */
+
+html,body{
+  background:#f7eee8 !important;
+}
+
+/* Full 16:9 sunflower scene */
+.wedding-book.card{
+  position:fixed !important;
+  inset:0 !important;
+  width:100vw !important;
+  height:100vh !important;
+  max-width:none !important;
+  margin:0 !important;
+  background:transparent !important;
+}
+
+/* The "book" is now a translucent page laid over the field,
+   rather than a white card replacing the scene. */
+.wedding-book__page{
+  position:absolute !important;
+  inset:3.5vh 3.2vw !important;
+  width:auto !important;
+  height:auto !important;
+  border-radius:22px 30px 30px 22px !important;
+  border:1px solid rgba(255,250,244,.70) !important;
+  box-shadow:
+    0 20px 55px rgba(78,49,37,.12),
+    inset 0 1px 0 rgba(255,255,255,.72) !important;
+  background:
+    linear-gradient(rgba(255,248,241,.035),rgba(255,248,241,.035)),
+    url("assets/images/wedding-guestbook-sunflower-bg.jpg") center center / cover no-repeat !important;
+  overflow:hidden !important;
+}
+
+/* Double editorial page border */
+.wedding-book__page:before{
+  content:"" !important;
+  display:block !important;
+  position:absolute !important;
+  inset:18px !important;
+  width:auto !important;
+  height:auto !important;
+  border:1px solid rgba(255,249,240,.78) !important;
+  border-radius:13px 22px 22px 13px !important;
+  background:rgba(255,248,241,.045) !important;
+  box-shadow:inset 0 0 0 1px rgba(157,107,72,.13) !important;
+  pointer-events:none !important;
+  z-index:1 !important;
+}
+.wedding-book__page:after{
+  content:"" !important;
+  display:block !important;
+  position:absolute !important;
+  inset:27px !important;
+  width:auto !important;
+  height:auto !important;
+  border:1px solid rgba(255,249,240,.50) !important;
+  border-radius:10px 18px 18px 10px !important;
+  pointer-events:none !important;
+  z-index:1 !important;
+}
+
+/* Remove old decorative layers that were causing duplication. */
+.stage > .floral,
+.stage > .petal,
+.wedding-book__floral,
+.wedding-book__ornament,
+.wedding-book__note{
+  display:none !important;
+}
+
+/* Editorial header */
+.wedding-book__heading{
+  display:block !important;
+  top:8.0vh !important;
+  left:0 !important;
+  right:0 !important;
+  z-index:10 !important;
+}
+.wedding-book__kicker{
+  color:#80575a !important;
+  font-size:clamp(9px,.82vw,13px) !important;
+  letter-spacing:.34em !important;
+}
+.wedding-book__title{
+  margin-top:12px !important;
+  color:#38272a !important;
+  font-size:clamp(42px,5.0vw,78px) !important;
+  line-height:.94 !important;
+  text-shadow:0 1px rgba(255,255,255,.55) !important;
+}
+.wedding-book__subtitle{
+  margin-top:12px !important;
+  color:#805c61 !important;
+  font-size:clamp(8px,.72vw,12px) !important;
+  letter-spacing:.22em !important;
+}
+
+/* Small heart divider under title */
+.wedding-book__heading:after{
+  content:"♡" !important;
+  display:block !important;
+  margin:9px auto 0 !important;
+  color:#b97877 !important;
+  font:400 25px/1 Georgia,serif !important;
+}
+
+/* Fixed wish frame — the "letter/page inside the book". */
+.wedding-book__wish-area{
+  top:37% !important;
+  bottom:auto !important;
+  left:0 !important;
+  right:0 !important;
+  height:36vh !important;
+  z-index:12 !important;
+}
+.wedding-book__wish{
+  position:relative !important;
+  width:min(760px,58vw) !important;
+  height:min(350px,31vh) !important;
+  min-height:230px !important;
+  max-height:350px !important;
+  padding:38px 68px 28px !important;
+  border:1px solid rgba(255,255,255,.78) !important;
+  border-radius:10px 18px 18px 10px !important;
+  background:
+    linear-gradient(rgba(255,248,239,.78),rgba(255,248,239,.78)) !important;
+  box-shadow:
+    0 18px 48px rgba(76,50,38,.17),
+    inset 0 1px 0 rgba(255,255,255,.96),
+    inset 0 0 0 1px rgba(160,108,68,.10) !important;
+  backdrop-filter:blur(2px) !important;
+  -webkit-backdrop-filter:blur(2px) !important;
+  overflow:hidden !important;
+}
+
+/* Inner "paper" line */
+.wedding-book__wish > .message:before{
+  content:"" !important;
+}
+
+/* Small sunflower-style ornaments — intentionally minimal. */
+.wedding-book__wish:before,
+.wedding-book__wish:after{
+  content:"✿" !important;
+  position:absolute !important;
+  color:#d5a23a !important;
+  font-size:25px !important;
+  line-height:1 !important;
+  opacity:.92 !important;
+  z-index:2 !important;
+}
+.wedding-book__wish:before{left:24px !important;top:20px !important}
+.wedding-book__wish:after{right:24px !important;bottom:20px !important}
+
+/* Wish typography */
+.wedding-book__wish .message{
+  width:100% !important;
+  max-height:calc(100% - 30px) !important;
+  overflow:hidden !important;
+  text-align:center !important;
+  color:#493638 !important;
+  font-family:"Cormorant Garamond",Georgia,serif !important;
+  font-size:clamp(27px,3.25vw,55px) !important;
+  line-height:1.10 !important;
+  font-weight:400 !important;
+}
+.wedding-book__wish .from{
+  margin-top:15px !important;
+  color:#8e6b70 !important;
+  font:400 clamp(11px,.95vw,16px)/1 "Cormorant Garamond",Georgia,serif !important;
+  letter-spacing:.07em !important;
+}
+
+/* Bottom of the book page */
+.wedding-book__heart{
+  display:block !important;
+  left:50% !important;
+  bottom:12.2vh !important;
+  color:#b97778 !important;
+  font:400 24px/1 Georgia,serif !important;
+  z-index:12 !important;
+}
+.wedding-book__date{
+  display:block !important;
+  left:0 !important;
+  right:0 !important;
+  bottom:7.5vh !important;
+  width:auto !important;
+  padding:0 !important;
+  background:none !important;
+  box-shadow:none !important;
+  color:#7f6669 !important;
+  font:500 9px/1 "Montserrat",Arial,sans-serif !important;
+  letter-spacing:.14em !important;
+  text-align:center !important;
+  z-index:12 !important;
+}
+.wedding-book__progress{
+  display:none !important;
+}
+
+/* Kiosk utility remains the only system UI */
+.kiosk-bar{z-index:100 !important}
+
+/* Landscape is the intended display */
+@media (orientation:landscape){
+  .wedding-book__page{inset:3vh 2.6vw !important}
+  .wedding-book__heading{top:6.2vh !important}
+  .wedding-book__title{font-size:clamp(44px,4.7vw,76px) !important}
+  .wedding-book__wish-area{top:35.5% !important;height:37vh !important}
+  .wedding-book__wish{
+    width:min(760px,55vw) !important;
+    height:min(350px,31vh) !important;
+  }
+}
+@media (orientation:portrait){
+  .wedding-book__page{inset:2.5vh 2.5vw !important}
+  .wedding-book__heading{top:6vh !important}
+  .wedding-book__title{font-size:clamp(32px,8vw,54px) !important}
+  .wedding-book__wish-area{top:35% !important;height:35vh !important}
+  .wedding-book__wish{
+    width:84vw !important;
+    height:31vh !important;
+    min-height:220px !important;
+    padding:26px 30px 20px !important;
+  }
+}
+
+/* V6 — lật trang thay cho hiệu ứng nháy */
+.wedding-book__wish{
+  transform-origin:left center !important;
+  transform-style:preserve-3d !important;
+  -webkit-transform-style:preserve-3d !important;
+  will-change:transform,opacity !important;
+}
+.wedding-book__wish.page-turn-out{
+  transform:perspective(1500px) rotateY(-88deg) !important;
+  opacity:.12 !important;
+  transition:transform .42s cubic-bezier(.55,.08,.75,.25),opacity .42s ease !important;
+  box-shadow:18px 18px 34px rgba(62,40,34,.20),inset 0 1px 0 rgba(255,255,255,.96) !important;
+}
+.wedding-book__wish.page-turn-in{
+  animation:pageTurnIn .72s cubic-bezier(.22,.72,.25,1) both !important;
+}
+@keyframes pageTurnIn{
+  0%{transform:perspective(1500px) rotateY(88deg);opacity:.12}
+  55%{transform:perspective(1500px) rotateY(-8deg);opacity:.92}
+  100%{transform:perspective(1500px) rotateY(0deg);opacity:1}
+}
+@media (prefers-reduced-motion:reduce){
+  .wedding-book__wish,.wedding-book__wish.page-turn-out,.wedding-book__wish.page-turn-in{
+    animation:none !important;transition:none !important;transform:none !important;opacity:1 !important;
+  }
+}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="glow glow--1"></div>
+  <div class="glow glow--2"></div>
+  <div class="floral floral--tl"></div>
+  <div class="floral floral--br"></div>
+  <span class="petal"></span><span class="petal"></span><span class="petal"></span>
+  <span class="petal"></span><span class="petal"></span><span class="petal"></span>
+<main class="wedding-book card" id="card" aria-label="Sổ lời chúc">
+  <div class="wedding-book__page">
+    <div class="wedding-book__frame"></div>
+    <div class="wedding-book__floral wedding-book__floral--tl"></div>
+    <div class="wedding-book__floral wedding-book__floral--br"></div>
+
+    <div class="wedding-book__heading">
+      <div class="wedding-book__kicker">WEDDING GUESTBOOK</div>
+      <div class="wedding-book__title">Thành Trung &amp; Nhật Trang</div>
+      <div class="wedding-book__subtitle">15 · 05 · 2027 · OUR WEDDING DAY</div>
+    </div>
+
+    <div class="wedding-book__ornament">♡</div>
+
+    <div class="wedding-book__wish-area">
+      <div class="wedding-book__wish bubble--wish">
+        <div class="message" id="message">Đang chờ những lời chúc đầu tiên...</div>
+        <div class="from" id="from"></div>
+      </div>
+    </div>
+
+    <div class="wedding-book__heart">♡</div>
+    <div class="wedding-book__date" id="time"></div>
+    <div class="wedding-book__note">A page written with love</div>
+    <div class="wedding-book__progress"><i id="progress"></i></div>
+  </div>
+</main>
+<div id="kioskPanel" class="kiosk-panel">
+    <div class="kiosk-panel__eyebrow">DIGITAL GUESTBOOK · TRUNG × TRANG</div>
+    <div class="kiosk-panel__title">Sẵn sàng trình chiếu</div>
+    <div class="kiosk-panel__text">
+      Bấm bắt đầu một lần. Màn hình sẽ chạy lời chúc tự động và cố gắng giữ màn hình luôn sáng.
+    </div>
+    <div class="kiosk-panel__actions">
+      <button id="startKiosk" class="kiosk-primary" type="button">BẮT ĐẦU TRÌNH CHIẾU</button>
+      <button id="wakeButton" class="kiosk-secondary" type="button">GIỮ MÀN HÌNH SÁNG</button>
+    </div>
+    <div id="kioskHint" class="kiosk-panel__hint"></div>
+  </div>
+  <div id="kioskBar" class="kiosk-bar" hidden>
+    <span id="kioskLiveDot"></span>
+    <span id="kioskLiveText">ĐANG TRÌNH CHIẾU</span>
+
+    <span class="kiosk-sep">·</span>
+    <span id="wakeStatus">ĐANG KIỂM TRA MÀN HÌNH</span>
+    <button id="exitKiosk" type="button">THOÁT</button>
+  </div>
+</div>
+
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-app.js";
+import {
+  getFirestore,
+  collection,
+  query,
+  orderBy,
+  limit,
+  where,
+  onSnapshot
+} from "https://www.gstatic.com/firebasejs/12.19.0/firebase-firestore.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyD8Q_J2p6U6at2HeWfdc6bqEhO4AfoDy0Q",
+  authDomain: "trung-trang-wedding-2027.firebaseapp.com",
+  projectId: "trung-trang-wedding-2027",
+  storageBucket: "trung-trang-wedding-2027.firebasestorage.app",
+  messagingSenderId: "594388235466",
+  appId: "1:594388235466:web:a10a124d5f07ef8f423033"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+const messageEl = document.getElementById("message");
+const fromEl = document.getElementById("from");
+const timeEl = document.getElementById("time");
+const card = document.getElementById("card");
+const progress = document.getElementById("progress");
+
+let wishes = [];
+let displayQueue = [];
+let pendingNew = [];
+let knownIds = new Set();
+let currentIndex = 0;
+let timer = null;
+let slideshowStarted = false;
+let animationFrame = null;
+let currentWishStartedAt = 0;
+let currentWishDeadline = 0;
+let wakeLock = null;
+
+const DISPLAY_MS = 7000; // Mỗi lời chúc hiển thị 7 giây
+const MAX_DISPLAY_WISHES = 100;
+
+/*
+  QUY TẮC TRÌNH CHIẾU — TRUNG × TRANG
+  1. Chỉ lời chúc đã được Admin duyệt mới được chiếu.
+  2. Màn hình lấy tối đa 100 lời chúc đã duyệt gần nhất.
+  3. Vòng đầu tiên chạy từ cũ → mới.
+  4. Lời chúc mới đã duyệt KHÔNG chen ngang lời đang hiển thị.
+  5. Lời chúc mới được ưu tiên ở đầu vòng kế tiếp.
+  6. Firestore cập nhật realtime, không cần refresh màn hình.
+  7. Admin có thể sửa tên và nội dung; bản đã sửa dùng displayName/displayMessage.
+  8. Chế độ KIOSK và Wake Lock độc lập với slideshow; mất Wake Lock không được làm dừng lời chúc.
+*/
+
+function formatTime(value) {
+  if (!value) return "";
+
+  try {
+    const date = value?.toDate
+      ? value.toDate()
+      : (value instanceof Date ? value : new Date(value));
+
+    if (Number.isNaN(date.getTime())) return "";
+
+    return new Intl.DateTimeFormat("vi-VN", {
+      day: "2-digit",
+      month: "2-digit",
+      year: "numeric",
+      hour: "2-digit",
+      minute: "2-digit"
+    }).format(date);
+  } catch (err) {
+    console.warn("formatTime error:", err);
+    return "";
+  }
+}
+
+function sortByCreatedAtAsc(list) {
+  return [...list].sort((a, b) => {
+    const ta = a.createdAt?.toMillis ? a.createdAt.toMillis() : 0;
+    const tb = b.createdAt?.toMillis ? b.createdAt.toMillis() : 0;
+    return ta - tb;
+  });
+}
+
+
+function fitWishMessage(){
+  const message = messageEl;
+  const bubble = document.querySelector(".bubble--wish");
+  if (!message || !bubble) return;
+
+  // Chỉ tối ưu cho khung trình chiếu ngang.
+  if (window.matchMedia("(orientation: landscape)").matches) {
+    message.style.fontSize = "";
+    message.style.lineHeight = "1.12";
+
+    const maxSize = 54;
+    const minSize = 16;
+    let size = maxSize;
+
+    message.style.fontSize = size + "px";
+
+    while (
+      size > minSize &&
+      (message.scrollHeight > message.clientHeight ||
+       message.scrollWidth > message.clientWidth)
+    ) {
+      size -= 1;
+      message.style.fontSize = size + "px";
+    }
+  } else {
+    message.style.fontSize = "";
+    message.style.lineHeight = "";
+  }
+}
+
+window.addEventListener("resize", fitWishMessage);
+window.addEventListener("orientationchange", () => {
+  setTimeout(fitWishMessage, 80);
+});
+
+function showWish(index) {
+  if (!displayQueue.length) {
+    showWaitingState("Đang chờ lời chúc được duyệt...");
+    return;
+  }
+
+  const wish = displayQueue[index];
+
+  const updateWishContent = () => {
+    messageEl.textContent = wish.displayMessage || wish.message || "Một lời chúc thật đẹp ♡";
+    fromEl.textContent = wish.displayName
+      ? "— " + wish.displayName + " —"
+      : (wish.name ? "— " + wish.name + " —" : "");
+    timeEl.textContent = formatTime(wish.createdAt);
+
+    requestAnimationFrame(() => fitWishMessage());
+  };
+
+  // Lời đầu tiên hiện bình thường. Các lời sau chuyển bằng hiệu ứng lật trang.
+  if (!window.__wishPageStarted) {
+    window.__wishPageStarted = true;
+    card.classList.remove("page-turn-out","page-turn-in","fade");
+    updateWishContent();
+  } else {
+    card.classList.remove("page-turn-in");
+    card.classList.add("page-turn-out");
+
+    window.setTimeout(() => {
+      updateWishContent();
+
+      requestAnimationFrame(() => {
+        card.classList.remove("page-turn-out");
+        void card.offsetWidth;
+        card.classList.add("page-turn-in");
+
+        window.setTimeout(() => {
+          card.classList.remove("page-turn-in");
+        }, 760);
+      });
+    }, 420);
+  }
+
+  currentWishStartedAt = Date.now();
+  currentWishDeadline = currentWishStartedAt + DISPLAY_MS;
+  progress.style.width = "0%";
+}
+
+function buildInitialQueue(allWishes) {
+  const selected = allWishes
+    .slice()
+    .sort((a, b) => {
+      const ta = a.createdAt?.toMillis ? a.createdAt.toMillis() : 0;
+      const tb = b.createdAt?.toMillis ? b.createdAt.toMillis() : 0;
+      return tb - ta;
+    })
+    .slice(0, MAX_DISPLAY_WISHES);
+
+  return sortByCreatedAtAsc(selected);
+}
+
+function advanceWish(){
+  if (!displayQueue.length) return;
+
+  currentIndex += 1;
+
+  if (currentIndex >= displayQueue.length) {
+    if (pendingNew.length) {
+      const fresh = sortByCreatedAtAsc(pendingNew);
+      const freshIds = new Set(fresh.map(w => w.id));
+      const old = displayQueue.filter(w => !freshIds.has(w.id));
+
+      // Lời mới luôn đứng đầu vòng tiếp theo.
+      displayQueue = [...fresh, ...old].slice(0, MAX_DISPLAY_WISHES);
+      pendingNew = [];
+    }
+
+    currentIndex = 0;
+  }
+
+  showWish(currentIndex);
+}
+
+function scheduleNextWish(){
+  clearTimeout(timer);
+
+  if (!slideshowStarted || !displayQueue.length) return;
+
+  const delay = Math.max(0, currentWishDeadline - Date.now());
+
+  timer = setTimeout(() => {
+    if (!slideshowStarted || !displayQueue.length) return;
+
+    // setTimeout là bộ chuyển lời chính. Deadline tuyệt đối tránh bị trôi giờ.
+    if (Date.now() >= currentWishDeadline) {
+      advanceWish();
+    }
+
+    scheduleNextWish();
+  }, delay + 20);
+}
+
+function progressFrame(){
+  if (slideshowStarted && displayQueue.length) {
+    const elapsed = Date.now() - currentWishStartedAt;
+    const pct = Math.max(0, Math.min(100, (elapsed / DISPLAY_MS) * 100));
+    progress.style.width = pct + "%";
+  }
+
+  animationFrame = requestAnimationFrame(progressFrame);
+}
+
+function startInitialSlideshow() {
+  clearTimeout(timer);
+  if (animationFrame) cancelAnimationFrame(animationFrame);
+
+  if (!displayQueue.length) {
+    slideshowStarted = false;
+    showWish(0);
+    return;
+  }
+
+  currentIndex = 0;
+  slideshowStarted = true;
+  showWish(currentIndex);
+
+  // Timeout chịu trách nhiệm chuyển lời; RAF chỉ vẽ thanh tiến trình.
+  scheduleNextWish();
+  animationFrame = requestAnimationFrame(progressFrame);
+}
+
+const kioskPanel = document.getElementById("kioskPanel");
+const kioskBar = document.getElementById("kioskBar");
+const startKiosk = document.getElementById("startKiosk");
+const wakeButton = document.getElementById("wakeButton");
+const exitKiosk = document.getElementById("exitKiosk");
+const wakeStatus = document.getElementById("wakeStatus");
+const kioskHint = document.getElementById("kioskHint");
+
+let kioskStarted = false;
+
+
+function showWaitingState(message){
+  messageEl.textContent = message;
+  fromEl.textContent = "";
+  timeEl.textContent = "";
+  progress.style.width = "0%";
+}
+
+async function requestWakeLock(){
+  if (!("wakeLock" in navigator)) {
+    wakeStatus.textContent = "WAKE LOCK KHÔNG HỖ TRỢ";
+    kioskHint.textContent = "Trình duyệt không hỗ trợ giữ sáng. Với laptop, đặt Sleep/Screen timeout = Never.";
+    return false;
+  }
+
+  try {
+    if (wakeLock && wakeLock.released === false) {
+      wakeStatus.textContent = "MÀN HÌNH ĐANG GIỮ SÁNG";
+      return true;
+    }
+
+    wakeLock = await navigator.wakeLock.request("screen");
+    wakeStatus.textContent = "MÀN HÌNH ĐANG GIỮ SÁNG";
+    kioskHint.textContent = "Đã bật giữ sáng. Không đóng tab trình chiếu.";
+
+    wakeLock.addEventListener("release", () => {
+      wakeLock = null;
+      wakeStatus.textContent = "GIỮ SÁNG ĐÃ TẠM NGỪNG";
+      if (kioskStarted) {
+        kioskHint.textContent = "Màn hình có thể tự tối. Hãy bấm “GIỮ MÀN HÌNH SÁNG” nếu cần.";
+      }
+    });
+
+    return true;
+  } catch (err) {
+    console.warn("Wake Lock unavailable:", err);
+    wakeStatus.textContent = "CHƯA GIỮ ĐƯỢC MÀN HÌNH";
+    kioskHint.textContent = "Nếu dùng laptop: đặt Sleep và Screen timeout = Never. Nếu dùng iPad: bấm “GIỮ MÀN HÌNH SÁNG”.";
+    return false;
+  }
+}
+
+async function enterFullscreen(){
+  try{
+    if (!document.fullscreenElement && document.documentElement.requestFullscreen) {
+      await document.documentElement.requestFullscreen();
+    }
+  }catch(err){
+    console.warn("Fullscreen unavailable:", err);
+  }
+}
+
+async function startKioskMode(){
+  kioskStarted = true;
+  kioskPanel.classList.add("hidden");
+  kioskBar.hidden = false;
+
+  // User gesture: best chance for both fullscreen and Wake Lock.
+  await enterFullscreen();
+  await requestWakeLock();
+
+  // Ensure slideshow has already started if data is available.
+  if (!slideshowStarted && displayQueue.length) {
+    startInitialSlideshow();
+  }
+}
+
+startKiosk.addEventListener("click", startKioskMode);
+wakeButton.addEventListener("click", requestWakeLock);
+
+exitKiosk.addEventListener("click", async ()=>{
+  kioskStarted = false;
+  kioskBar.hidden = true;
+  kioskPanel.classList.remove("hidden");
+  try{
+    if(document.fullscreenElement && document.exitFullscreen){
+      await document.exitFullscreen();
+    }
+  }catch(err){}
+});
+
+document.addEventListener("visibilitychange", async ()=>{
+  if(document.visibilityState === "visible"){
+    if(kioskStarted) await requestWakeLock();
+
+    // Nếu browser đã throttle timer khi tab bị ẩn, chuyển ngay khi quay lại.
+    if(slideshowStarted && displayQueue.length){
+      if(Date.now() >= currentWishDeadline){
+        advanceWish();
+      }
+      scheduleNextWish();
+    }
+  }
+});
+
+// If the OS/browser releases Wake Lock, retry when the page becomes active.
+window.addEventListener("focus", async ()=>{
+  if(kioskStarted) await requestWakeLock();
+});
+
+// Slideshow itself is independent of Wake Lock: even if Wake Lock fails,
+// the wishes continue cycling.
+// Chỉ lọc theo approved ở Firestore để tránh phải tạo composite index.
+// Sau đó sắp xếp và lấy 100 lời mới nhất ở phía trình duyệt.
+const wishesQuery = query(
+  collection(db, "wedding_wishes"),
+  where("approved", "==", true)
+);
+
+onSnapshot(wishesQuery, snapshot => {
+  try {
+    const incomingAll = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+
+    const incoming = incomingAll
+    .slice()
+    .sort((a, b) => {
+      const ta = a.createdAt?.toMillis ? a.createdAt.toMillis() : 0;
+      const tb = b.createdAt?.toMillis ? b.createdAt.toMillis() : 0;
+      return tb - ta;
+    })
+    .slice(0, MAX_DISPLAY_WISHES);
+
+  if (!incoming.length) {
+    if (!slideshowStarted) {
+      showWaitingState("Chưa có lời chúc được duyệt...");
+    }
+  } else {
+  }
+
+  if (!slideshowStarted) {
+    wishes = incoming;
+    knownIds = new Set(incoming.map(w => w.id));
+    displayQueue = buildInitialQueue(incoming);
+
+    if (displayQueue.length) {
+      startInitialSlideshow();
+    } else {
+      showWaitingState("Chưa có lời chúc được duyệt...");
+    }
+    return;
+  }
+
+  const incomingMap = new Map(incoming.map(w => [w.id, w]));
+
+  // Đồng bộ nội dung đã sửa bởi Admin cho các lời đang có trong queue.
+  displayQueue = displayQueue.map(w => incomingMap.get(w.id) || w);
+
+  const newWishes = incoming.filter(w => !knownIds.has(w.id));
+
+  if (newWishes.length) {
+    newWishes.forEach(w => knownIds.add(w.id));
+    pendingNew.push(...newWishes);
+  }
+
+    wishes = incoming;
+  } catch (err) {
+    console.error("Wishes snapshot runtime error:", err);
+    const runtimeLabel = err?.name ? `${err.name}` : "RUNTIME ERROR";
+    showWaitingState("Không thể xử lý danh sách lời chúc.");
+  }
+}, error => {
+  console.error("Wishes display error:", error);
+
+  if (!slideshowStarted) {
+    showWaitingState(
+      error?.code === "permission-denied"
+        ? "Không có quyền đọc lời chúc đã duyệt."
+        : "Chưa thể kết nối danh sách lời chúc."
+    );
+  }
+});
+</script>
+</body>
+</html>
