@@ -1,468 +1,152 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Đức & Ngọc | Wedding Invitation</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fbf5f1">
+  <meta name="description" content="Thiệp cưới Đức & Ngọc - 20 tháng 10 năm 2026">
+  <title>Đức & Ngọc | Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <div class="page-loader" id="pageLoader"><div class="loader-mark">D <span>&</span> N</div><div class="loader-line"></div></div>
 
-<!-- =========================
-     MUSIC
-========================= -->
+  <button class="music-toggle" id="musicToggle" aria-label="Bật hoặc tắt nhạc">♫</button>
+  <audio id="weddingMusic" loop preload="none"><source src="music/wedding.mp3" type="audio/mpeg"></audio>
 
-<audio id="weddingMusic" loop>
-    <source src="music/wedding.mp3" type="audio/mpeg">
-</audio>
-
-<button id="musicButton" class="music-button">
-    ♫
-</button>
-
-
-<!-- =========================
-     HERO
-========================= -->
-
-<section class="hero">
-
-    <div class="hero-overlay"></div>
-
-    <div class="hero-content">
-
-        <p class="small-title">
-            WEDDING INVITATION
-        </p>
-
-        <h1>
-            Đức <span>&</span> Ngọc
-        </h1>
-
-        <p class="date">
-            20 · 10 · 2026
-        </p>
-
-        <button class="open-button" onclick="scrollToInvitation()">
-            MỞ THIỆP
-        </button>
-
+  <header class="hero" id="top">
+    <div class="hero-wash"></div>
+    <div class="hero-flower flower-a">❀</div><div class="hero-flower flower-b">✿</div>
+    <div class="hero-content reveal">
+      <p class="eyebrow">TRÂN TRỌNG KÍNH MỜI</p>
+      <p class="hero-script">The Wedding Of</p>
+      <h1>Đức <i>&</i> Ngọc</h1>
+      <div class="ornament">❦</div>
+      <p class="hero-date">20 · 10 · 2026</p>
+      <button class="primary-button" data-scroll="#invitation">MỞ THIỆP</button>
     </div>
+    <div class="scroll-hint">CUỘN XUỐNG <span>↓</span></div>
+  </header>
+
+  <main>
+    <section class="section intro" id="invitation">
+      <p class="eyebrow">SAVE THE DATE</p>
+      <h2>Một ngày đặc biệt<br><span>của chúng tôi</span></h2>
+      <div class="ornament dark">❦</div>
+      <p class="lead">Tình yêu là hành trình của hai trái tim. Chúng tôi thật hạnh phúc khi được cùng nhau bước sang một chương mới của cuộc đời.</p>
+      <p class="lead">Đức & Ngọc trân trọng kính mời Quý khách đến chung vui cùng gia đình trong ngày trọng đại này.</p>
+    </section>
+
+    <section class="couple-band">
+      <div class="portrait-wrap"><img src="images/couple.jpg" alt="Đức và Ngọc" onerror="this.src='images/photo-01.jpg'"></div>
+      <div class="couple-copy">
+        <p class="eyebrow">THE HAPPY COUPLE</p>
+        <h2>Đức <span>&</span> Ngọc</h2>
+        <p>Hai con người, hai câu chuyện, và một tình yêu mà chúng tôi muốn viết tiếp cùng nhau.</p>
+        <div class="small-ornament">✦ ✦ ✦</div>
+      </div>
+    </section>
+
+    <section class="section wedding-info">
+      <p class="eyebrow">THÔNG TIN LỄ CƯỚI</p>
+      <h2>Trân trọng báo tin<br><span>lễ thành hôn của chúng tôi</span></h2>
+      <div class="family-grid">
+        <div class="family-card"><p class="family-title">NHÀ TRAI</p><h3>Ông Nguyễn Văn A<br><span>&</span><br>Bà Trần Thị B</h3><p>Tư gia nhà trai</p></div>
+        <div class="family-card"><p class="family-title">NHÀ GÁI</p><h3>Ông Nguyễn Văn C<br><span>&</span><br>Bà Phạm Thị D</h3><p>Tư gia nhà gái</p></div>
+      </div>
+      <div class="names-line"><span>Đức</span><b>&</b><span>Ngọc</span></div>
+      <p class="roles">TRƯỞNG NAM &nbsp; • &nbsp; ÚT NỮ</p>
+    </section>
+
+    <section class="ceremony-section">
+      <div class="ceremony-inner">
+        <p class="eyebrow">LỄ THÀNH HÔN</p>
+        <h2>Được cử hành tại<br><span>tư gia nhà trai</span></h2>
+        <div class="date-box"><strong>17:30</strong><small>THỨ BA</small><b>20</b><small>THÁNG 10 · 2026</small></div>
+        <p class="address">Số nhà 11, ngõ 5, xóm Lạc Long Quân,<br>thôn Dương Khê, xã Vân Đình, Hà Nội</p>
+        <a class="outline-button" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Số+nhà+11,+ngõ+5,+xóm+Lạc+Long+Quân,+thôn+Dương+Khê,+xã+Vân+Đình,+Hà+Nội">CHỈ ĐƯỜNG</a>
+      </div>
+    </section>
+
+    <section class="section gallery-section">
+      <p class="eyebrow">OUR MOMENTS</p><h2>Album Ảnh</h2><div class="ornament dark">❦</div>
+      <div class="gallery" id="gallery">
+        <button class="gallery-item large"><img src="images/photo-01.jpg" alt="Ảnh cưới 1"></button>
+        <button class="gallery-item"><img src="images/photo-02.jpg" alt="Ảnh cưới 2"></button>
+        <button class="gallery-item"><img src="images/photo-03.jpg" alt="Ảnh cưới 3"></button>
+        <button class="gallery-item"><img src="images/photo-04.jpg" alt="Ảnh cưới 4"></button>
+        <button class="gallery-item"><img src="images/photo-05.jpg" alt="Ảnh cưới 5"></button>
+      </div>
+      <p class="gallery-note">Bạn có thể thay ảnh trong thư mục <b>images</b> bất cứ lúc nào.</p>
+    </section>
+
+    <section class="section reception-section">
+      <p class="eyebrow">THÔNG TIN TIỆC CƯỚI</p>
+      <h2>Bữa cơm thân mật<br><span>chung vui cùng gia đình</span></h2>
+      <div class="reception-card">
+        <div><small>THỜI GIAN</small><strong>17:30</strong><p>Thứ Ba, 20 tháng 10 năm 2026</p></div>
+        <div><small>ĐỊA ĐIỂM</small><strong>TƯ GIA NHÀ TRAI</strong><p>Số nhà 11, ngõ 5, xóm Lạc Long Quân, thôn Dương Khê, xã Vân Đình, Hà Nội</p></div>
+      </div>
+    </section>
+
+    <section class="countdown-section">
+      <div class="section countdown-inner">
+        <p class="eyebrow">CÙNG ĐẾM NGƯỢC</p><h2>Đến ngày hạnh phúc</h2>
+        <div class="countdown" id="countdown"><div><b id="days">00</b><span>Ngày</span></div><div><b id="hours">00</b><span>Giờ</span></div><div><b id="minutes">00</b><span>Phút</span></div><div><b id="seconds">00</b><span>Giây</span></div></div>
+      </div>
+    </section>
+
+    <section class="section calendar-section">
+      <p class="eyebrow">WEDDING DAY</p><h2>Tháng 10 / 2026</h2>
+      <div class="calendar">
+        <div class="weekday">T2</div><div class="weekday">T3</div><div class="weekday">T4</div><div class="weekday">T5</div><div class="weekday">T6</div><div class="weekday">T7</div><div class="weekday">CN</div>
+        <div></div><div></div><div></div><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div><div>7</div><div>8</div><div>9</div><div>10</div><div>11</div><div>12</div><div>13</div><div>14</div><div>15</div><div>16</div><div>17</div><div>18</div><div>19</div><div class="today-wedding">20</div><div>21</div><div>22</div><div>23</div><div>24</div><div>25</div><div>26</div><div>27</div><div>28</div><div>29</div><div>30</div><div>31</div>
+      </div>
+      <a class="outline-button" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Đám+cưới+Đức+%26+Ngọc&dates=20261020T103000/20261020T123000&details=Trân+trọng+kính+mời+bạn+đến+chung+vui+cùng+gia+đình&location=Số+11,+ngõ+5,+xóm+Lạc+Long+Quân,+thôn+Dương+Khê,+xã+Vân+Đình,+Hà+Nội">THÊM VÀO LỊCH</a>
+    </section>
+
+    <section class="section rsvp-section" id="rsvp">
+      <p class="eyebrow">XÁC NHẬN THAM DỰ</p><h2>Sự hiện diện của bạn<br><span>là niềm vui của chúng tôi</span></h2>
+      <form id="rsvpForm" class="rsvp-form">
+        <input id="guestName" type="text" placeholder="Họ và tên *" required>
+        <select id="guestStatus" required><option value="">Bạn sẽ tham dự?</option><option value="Có, tôi sẽ tham dự">Có, tôi sẽ tham dự</option><option value="Rất tiếc, tôi không thể tham dự">Rất tiếc, tôi không thể tham dự</option></select>
+        <select id="guestCount"><option value="1">1 người</option><option value="2">2 người</option><option value="3">3 người</option><option value="4">4 người</option></select>
+        <textarea id="guestNote" rows="4" placeholder="Lời nhắn (không bắt buộc)"></textarea>
+        <button class="primary-button dark-button" type="submit">XÁC NHẬN</button>
+        <p id="rsvpMessage" class="form-message"></p>
+      </form>
+    </section>
+
+    <section class="section map-section">
+      <p class="eyebrow">ĐỊA ĐIỂM</p><h2>Hẹn gặp bạn<br><span>tại ngày vui của chúng tôi</span></h2>
+      <div class="map-placeholder"><div class="map-pin">♥</div><h3>Tư gia nhà trai</h3><p>Số nhà 11, ngõ 5, xóm Lạc Long Quân, thôn Dương Khê, xã Vân Đình, Hà Nội</p><a class="outline-button" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Số+nhà+11,+ngõ+5,+xóm+Lạc+Long+Quân,+thôn+Dương+Khê,+xã+Vân+Đình,+Hà+Nội">MỞ GOOGLE MAPS</a></div>
+    </section>
+
+    <section class="dress-section"><div class="section"><p class="eyebrow">DRESS CODE</p><h2>Trang phục dự tiệc</h2><p class="lead">Thanh lịch · Trang nhã · Tự do lựa chọn</p><div class="dress-swatches"><span>○</span><span>○</span><span>○</span></div></div></section>
+
+    <section class="section timeline-section">
+      <p class="eyebrow">WEDDING DAY</p><h2>Lịch trình ngày cưới</h2>
+      <div class="timeline"><div class="timeline-item"><time>16:30</time><div><h3>Đón khách</h3><p>Gia đình hân hạnh đón tiếp Quý khách tại tư gia.</p></div></div><div class="timeline-item"><time>17:30</time><div><h3>Bữa cơm thân mật</h3><p>Cùng gia đình dùng bữa cơm thân mật và chung vui trong ngày hạnh phúc.</p></div></div><div class="timeline-item"><time>19:00</time><div><h3>Chúc mừng hạnh phúc</h3><p>Lưu giữ những khoảnh khắc đáng nhớ cùng gia đình và bạn bè.</p></div></div></div>
+    </section>
 
-</section>
+    <section class="section guestbook-section">
+      <p class="eyebrow">GUESTBOOK</p><h2>Sổ lưu bút</h2><p class="lead">Hãy để lại một lời chúc thật đẹp cho chúng tôi nhé!</p>
+      <form id="wishForm" class="wish-form"><input id="wishName" placeholder="Tên của bạn *" required><textarea id="wishText" rows="4" placeholder="Lời chúc *" required></textarea><button class="primary-button dark-button">GỬI LỜI CHÚC</button></form>
+      <div class="wish-list" id="wishList"></div>
+    </section>
 
+    <section class="gift-section"><div class="section"><p class="eyebrow">HỘP QUÀ MỪNG</p><h2>Một chút yêu thương</h2><p class="lead">Nếu bạn muốn gửi lời chúc mừng bằng một món quà nhỏ, thông tin bên dưới có thể giúp bạn thuận tiện hơn.</p><button class="primary-button dark-button" id="giftButton">MỞ HỘP QUÀ</button></div></section>
 
-<!-- =========================
-     INTRODUCTION
-========================= -->
+    <section class="thank-section"><div class="thank-overlay"></div><div class="thank-content"><p class="eyebrow">THANK YOU</p><h2>Cảm ơn bạn</h2><div class="ornament">❦</div><p>Sự hiện diện của Quý khách là niềm vinh hạnh và là món quà ý nghĩa nhất đối với gia đình chúng tôi.</p><h3>Đức & Ngọc</h3><p class="hero-date">20 · 10 · 2026</p></div></section>
+  </main>
 
-<section class="section introduction">
+  <div class="modal" id="galleryModal"><button class="modal-close">×</button><img id="modalImage" src="" alt="Ảnh cưới phóng to"><button class="modal-prev">‹</button><button class="modal-next">›</button></div>
+  <div class="modal" id="giftModal"><button class="modal-close">×</button><div class="gift-card"><p class="eyebrow">HỘP QUÀ MỪNG</p><h2>Thông tin nhận quà</h2><div class="bank-grid"><div><h3>Chú rể</h3><p>Ngân hàng: <b>ĐANG CẬP NHẬT</b></p><p>Số tài khoản: <b>ĐANG CẬP NHẬT</b></p><p>Chủ tài khoản: <b>ĐỨC</b></p></div><div><h3>Cô dâu</h3><p>Ngân hàng: <b>ĐANG CẬP NHẬT</b></p><p>Số tài khoản: <b>ĐANG CẬP NHẬT</b></p><p>Chủ tài khoản: <b>NGỌC</b></p></div></div><p class="modal-note">Bạn có thể thay thông tin ngân hàng và thêm QR trong phần cấu hình của website sau.</p></div></div>
 
-    <p class="section-label">
-        SAVE THE DATE
-    </p>
-
-    <h2>
-        Một ngày đặc biệt<br>
-        của chúng tôi
-    </h2>
-
-    <div class="divider"></div>
-
-    <p class="intro-text">
-        Tình yêu là hành trình của hai trái tim,
-        và chúng tôi thật hạnh phúc khi được cùng nhau
-        bước sang một chương mới của cuộc đời.
-    </p>
-
-    <p class="intro-text">
-        Đức & Ngọc trân trọng kính mời Quý khách
-        đến chung vui cùng gia đình trong ngày trọng đại này.
-    </p>
-
-</section>
-
-
-<!-- =========================
-     COUPLE
-========================= -->
-
-<section class="couple-section">
-
-    <div class="couple-image">
-        <img src="images/couple.jpg" alt="Đức và Ngọc">
-    </div>
-
-    <div class="couple-info">
-
-        <p class="section-label">
-            THE HAPPY COUPLE
-        </p>
-
-        <h2>
-            Đức
-            <span>&</span>
-            Ngọc
-        </h2>
-
-        <p>
-            Hai con người, hai câu chuyện,
-            và một tình yêu mà chúng tôi muốn
-            viết tiếp cùng nhau.
-        </p>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     INVITATION
-========================= -->
-
-<section class="section invitation" id="invitation">
-
-    <p class="section-label">
-        TRÂN TRỌNG KÍNH MỜI
-    </p>
-
-    <h2>
-        Quý khách
-    </h2>
-
-    <div class="divider"></div>
-
-    <p class="invitation-text">
-        Tới dự bữa cơm thân mật,
-        chung vui cùng gia đình chúng tôi
-        trong ngày vui của hai con.
-    </p>
-
-    <p class="guest-name">
-        ........................................
-    </p>
-
-</section>
-
-
-<!-- =========================
-     FAMILY
-========================= -->
-
-<section class="family-section">
-
-    <div class="family-card">
-
-        <p class="section-label">
-            NHÀ TRAI
-        </p>
-
-        <h3>
-            Ông Nguyễn Văn A<br>
-            &amp;<br>
-            Bà Trần Thị B
-        </h3>
-
-        <p>
-            Tư gia nhà trai
-        </p>
-
-    </div>
-
-
-    <div class="family-card">
-
-        <p class="section-label">
-            NHÀ GÁI
-        </p>
-
-        <h3>
-            Ông Nguyễn Văn C<br>
-            &amp;<br>
-            Bà Phạm Thị D
-        </h3>
-
-        <p>
-            Tư gia nhà gái
-        </p>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     WEDDING INFORMATION
-========================= -->
-
-<section class="section wedding-details">
-
-    <p class="section-label">
-        WEDDING DETAILS
-    </p>
-
-    <h2>
-        Thông tin<br>
-        ngày trọng đại
-    </h2>
-
-    <div class="details-grid">
-
-        <div class="detail-item">
-
-            <div class="detail-icon">
-                ♡
-            </div>
-
-            <h3>
-                Thời gian
-            </h3>
-
-            <p>
-                17:30
-            </p>
-
-            <p>
-                Thứ Ba<br>
-                20 tháng 10 năm 2026
-            </p>
-
-        </div>
-
-
-        <div class="detail-item">
-
-            <div class="detail-icon">
-                ♧
-            </div>
-
-            <h3>
-                Địa điểm
-            </h3>
-
-            <p>
-                Tư gia nhà trai
-            </p>
-
-            <p>
-                Số nhà 11, ngõ 5,<br>
-                xóm Lạc Long Quân,<br>
-                thôn Dương Khê,<br>
-                xã Vân Đình, Hà Nội
-            </p>
-
-        </div>
-
-    </div>
-
-    <a
-        href="https://maps.google.com/"
-        target="_blank"
-        class="map-button"
-    >
-        XEM BẢN ĐỒ
-    </a>
-
-</section>
-
-
-<!-- =========================
-     TIMELINE
-========================= -->
-
-<section class="section timeline-section">
-
-    <p class="section-label">
-        WEDDING DAY
-    </p>
-
-    <h2>
-        Lịch trình
-    </h2>
-
-    <div class="timeline">
-
-        <div class="timeline-item">
-
-            <div class="timeline-time">
-                16:30
-            </div>
-
-            <div class="timeline-content">
-
-                <h3>
-                    Đón khách
-                </h3>
-
-                <p>
-                    Gia đình hân hạnh đón tiếp
-                    Quý khách tại tư gia.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="timeline-item">
-
-            <div class="timeline-time">
-                17:30
-            </div>
-
-            <div class="timeline-content">
-
-                <h3>
-                    Bữa cơm thân mật
-                </h3>
-
-                <p>
-                    Cùng gia đình dùng bữa cơm
-                    thân mật và chung vui
-                    trong ngày hạnh phúc.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="timeline-item">
-
-            <div class="timeline-time">
-                19:00
-            </div>
-
-            <div class="timeline-content">
-
-                <h3>
-                    Chúc mừng hạnh phúc
-                </h3>
-
-                <p>
-                    Những khoảnh khắc đáng nhớ
-                    cùng gia đình và bạn bè.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     PHOTO
-========================= -->
-
-<section class="photo-section">
-
-    <div class="photo-large">
-        <img src="images/photo-01.jpg" alt="Wedding photo">
-    </div>
-
-    <div class="photo-grid">
-
-        <img src="images/photo-02.jpg" alt="Wedding photo">
-
-        <img src="images/photo-03.jpg" alt="Wedding photo">
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     COUNTDOWN
-========================= -->
-
-<section class="section countdown-section">
-
-    <p class="section-label">
-        COUNTDOWN TO OUR WEDDING
-    </p>
-
-    <h2>
-        Hẹn gặp bạn<br>
-        trong ngày vui
-    </h2>
-
-    <div class="countdown">
-
-        <div>
-            <strong id="days">00</strong>
-            <span>Ngày</span>
-        </div>
-
-        <div>
-            <strong id="hours">00</strong>
-            <span>Giờ</span>
-        </div>
-
-        <div>
-            <strong id="minutes">00</strong>
-            <span>Phút</span>
-        </div>
-
-        <div>
-            <strong id="seconds">00</strong>
-            <span>Giây</span>
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     THANK YOU
-========================= -->
-
-<section class="thank-you">
-
-    <div class="thank-you-overlay"></div>
-
-    <div class="thank-you-content">
-
-        <p class="section-label">
-            THANK YOU
-        </p>
-
-        <h2>
-            Cảm ơn bạn
-        </h2>
-
-        <p>
-            Sự hiện diện của bạn là niềm vui
-            và là món quà ý nghĩa nhất
-            đối với gia đình chúng tôi.
-        </p>
-
-        <h3>
-            Đức & Ngọc
-        </h3>
-
-        <p class="date">
-            20 · 10 · 2026
-        </p>
-
-    </div>
-
-</section>
-
-
-<script src="script.js"></script>
-
+  <footer><p>Đức & Ngọc · 20.10.2026</p><a href="#top">↑</a></footer>
+  <script src="script.js"></script>
 </body>
 </html>
-```
